@@ -1,6 +1,6 @@
 package sort
 
-import "golang.org/x/exp/rand"
+import "math/rand"
 
 func sortArray(nums []int) []int {
 	sort(nums, 0, len(nums)-1)

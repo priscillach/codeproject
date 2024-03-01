@@ -1,6 +1,6 @@
 package sort
 
-import "math/rand"
+import "golang.org/x/exp/rand"
 
 func sortArray(nums []int) []int {
 	sort(nums, 0, len(nums)-1)
@@ -31,6 +31,6 @@ func fastSort(nums []int, left, right int) int {
 		}
 		nums[left] = nums[right]
 	}
-	nums[left] = tmp
+	nums[right] = tmp
 	return left
 }

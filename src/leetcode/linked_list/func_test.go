@@ -2,25 +2,26 @@ package linked_list
 
 import (
 	"fmt"
+	"leetcode/src/common/linkednode"
 	"testing"
 )
 
 func TestMergeTwoSortedLists(t *testing.T) {
-	list1 := &ListNode{
+	list1 := &linkednode.ListNode{
 		Val: 1,
-		Next: &ListNode{
+		Next: &linkednode.ListNode{
 			Val: 3,
-			Next: &ListNode{
+			Next: &linkednode.ListNode{
 				Val:  4,
 				Next: nil,
 			},
 		},
 	}
-	list2 := &ListNode{
+	list2 := &linkednode.ListNode{
 		Val: 1,
-		Next: &ListNode{
+		Next: &linkednode.ListNode{
 			Val: 2,
-			Next: &ListNode{
+			Next: &linkednode.ListNode{
 				Val:  4,
 				Next: nil,
 			},

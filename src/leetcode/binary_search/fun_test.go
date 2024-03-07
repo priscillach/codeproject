@@ -10,3 +10,8 @@ func TestSearch(t *testing.T) {
 	fmt.Println(searchTheFirst(a, 3))
 	fmt.Println(searchTheLast(a, 3))
 }
+
+func TestSearchRotate(t *testing.T) {
+	a := []int{3, 1}
+	fmt.Println(search(a, 3))
+}

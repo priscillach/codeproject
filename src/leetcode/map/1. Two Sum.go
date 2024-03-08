@@ -1,4 +1,4 @@
-package unclassified
+package _map
 
 func twoSum(nums []int, target int) []int {
 	left := make(map[int]int)

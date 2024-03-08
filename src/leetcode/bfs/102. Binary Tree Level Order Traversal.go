@@ -1,6 +1,6 @@
 package bfs
 
-import "leetcode/src/common/treenode"
+import "leetcode/src/define/treenode"
 
 func levelOrder(root *treenode.TreeNode) [][]int {
 	var res [][]int

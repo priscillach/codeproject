@@ -1,4 +1,4 @@
-package leetcode
+package dp
 
 func minDistance(word1 string, word2 string) int {
 	len1 := len(word1)

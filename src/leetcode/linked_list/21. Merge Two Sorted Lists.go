@@ -1,6 +1,6 @@
 package linked_list
 
-import "leetcode/src/common/linkednode"
+import "leetcode/src/define/linkednode"
 
 func mergeTwoLists(list1 *linkednode.ListNode, list2 *linkednode.ListNode) *linkednode.ListNode {
 	cur1 := list1

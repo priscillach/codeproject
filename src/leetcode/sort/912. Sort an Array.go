@@ -1,22 +1,22 @@
-package sort
+package _sort
 
 import "math/rand"
 
-func sortArray(nums []int) []int {
-	sort(nums, 0, len(nums)-1)
-	return nums
+// FastSort fast sort
+func FastSort(nums []int) {
+	FastSortByRange(nums, 0, len(nums)-1)
 }
 
-func sort(nums []int, left, right int) {
+func FastSortByRange(nums []int, left, right int) {
 	if left >= right {
 		return
 	}
-	cur := fastSort(nums, left, right)
-	sort(nums, left, cur-1)
-	sort(nums, cur+1, right)
+	cur := FastSortCore(nums, left, right)
+	FastSortByRange(nums, left, cur-1)
+	FastSortByRange(nums, cur+1, right)
 }
 
-func fastSort(nums []int, left, right int) int {
+func FastSortCore(nums []int, left, right int) int {
 	randIdx := left + rand.Intn(right-left+1)
 	tmp := nums[randIdx]
 	nums[randIdx] = nums[right]
@@ -33,4 +33,15 @@ func fastSort(nums []int, left, right int) int {
 	}
 	nums[right] = tmp
 	return left
+}
+
+// BubbleSort bubble sort
+func BubbleSort(nums []int) {
+	for i := len(nums) - 1; i > 0; i-- {
+		for j := 0; j < i; j++ {
+			if nums[j] > nums[j+1] {
+				nums[j+1], nums[j] = nums[j], nums[j+1]
+			}
+		}
+	}
 }

@@ -1,7 +1,5 @@
 package tree
 
-import "leetcode/src/define/treenode"
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -14,7 +12,7 @@ import "leetcode/src/define/treenode"
 var preOrder889, postOrder []int
 var postIdxMap map[int]int
 
-func constructFromPrePost(preorder []int, postorder []int) *treenode.TreeNode {
+func constructFromPrePost(preorder []int, postorder []int) *mytreenode.TreeNode {
 	preOrder889 = preorder
 	postOrder = postorder
 	postIdxMap = make(map[int]int)
@@ -24,12 +22,12 @@ func constructFromPrePost(preorder []int, postorder []int) *treenode.TreeNode {
 	return dfsBuild889(0, len(preorder)-1, 0, len(preorder)-1)
 }
 
-func dfsBuild889(preLeft, preRight, postLeft, postRight int) *treenode.TreeNode {
+func dfsBuild889(preLeft, preRight, postLeft, postRight int) *mytreenode.TreeNode {
 	if preLeft > preRight || postLeft > postRight {
 		return nil
 	}
 
-	root := &treenode.TreeNode{
+	root := &mytreenode.TreeNode{
 		Val: preOrder889[preLeft],
 	}
 	if preLeft == preRight {

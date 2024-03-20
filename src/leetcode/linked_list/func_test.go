@@ -4,26 +4,25 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/stretchr/testify/assert"
-	"leetcode/src/define/linkednode"
 	"testing"
 )
 
 func TestMergeTwoSortedLists(t *testing.T) {
-	list1 := &linkednode.ListNode{
+	list1 := &mylinkednode.ListNode{
 		Val: 1,
-		Next: &linkednode.ListNode{
+		Next: &mylinkednode.ListNode{
 			Val: 3,
-			Next: &linkednode.ListNode{
+			Next: &mylinkednode.ListNode{
 				Val:  4,
 				Next: nil,
 			},
 		},
 	}
-	list2 := &linkednode.ListNode{
+	list2 := &mylinkednode.ListNode{
 		Val: 1,
-		Next: &linkednode.ListNode{
+		Next: &mylinkednode.ListNode{
 			Val: 2,
-			Next: &linkednode.ListNode{
+			Next: &mylinkednode.ListNode{
 				Val:  4,
 				Next: nil,
 			},
@@ -34,15 +33,15 @@ func TestMergeTwoSortedLists(t *testing.T) {
 }
 
 func TestReverseBetween(t *testing.T) {
-	head := &linkednode.ListNode{
+	head := &mylinkednode.ListNode{
 		Val: 1,
-		Next: &linkednode.ListNode{
+		Next: &mylinkednode.ListNode{
 			Val: 2,
-			Next: &linkednode.ListNode{
+			Next: &mylinkednode.ListNode{
 				Val: 3,
-				Next: &linkednode.ListNode{
+				Next: &mylinkednode.ListNode{
 					Val: 4,
-					Next: &linkednode.ListNode{
+					Next: &mylinkednode.ListNode{
 						Val:  5,
 						Next: nil,
 					},

@@ -1,10 +1,8 @@
 package bfs
 
-import "leetcode/src/define/treenode"
-
-func levelOrder(root *treenode.TreeNode) [][]int {
+func levelOrder(root *mytreenode.TreeNode) [][]int {
 	var res [][]int
-	var queue []*treenode.TreeNode
+	var queue []*mytreenode.TreeNode
 	if root == nil {
 		return res
 	}

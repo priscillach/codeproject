@@ -1,7 +1,5 @@
 package bfs
 
-import "leetcode/src/define/treenode"
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -11,8 +9,8 @@ import "leetcode/src/define/treenode"
  * }
  */
 
-func findBottomLeftValue(root *treenode.TreeNode) int {
-	queue := make([]*treenode.TreeNode, 0)
+func findBottomLeftValue(root *mytreenode.TreeNode) int {
+	queue := make([]*mytreenode.TreeNode, 0)
 	queue = append(queue, root)
 	ans := 0
 

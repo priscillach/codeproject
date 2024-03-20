@@ -1,7 +1,7 @@
 package linked_list
 
 import (
-	"leetcode/src/define/linkednode"
+	"leetcode/src/define/mylinkednode"
 	"math"
 )
 
@@ -12,17 +12,17 @@ import (
  *     Next *ListNode
  * }
  */
-func reverseBetween(head *linkednode.ListNode, left int, right int) *linkednode.ListNode {
+func reverseBetween(head *mylinkednode.ListNode, left int, right int) *mylinkednode.ListNode {
 	if left == right {
 		return head
 	}
-	var cur *linkednode.ListNode
-	newHead := &linkednode.ListNode{
+	var cur *mylinkednode.ListNode
+	newHead := &mylinkednode.ListNode{
 		Val:  math.MaxInt64,
 		Next: head,
 	}
 	prev := head
-	var last *linkednode.ListNode
+	var last *mylinkednode.ListNode
 	for i := 0; i < right; i++ {
 		if i == left-1 {
 			cur = prev

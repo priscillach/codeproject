@@ -1,7 +1,5 @@
 package bfs
 
-import "leetcode/src/define/treenode"
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -10,10 +8,10 @@ import "leetcode/src/define/treenode"
  *     Right *TreeNode
  * }
  */
-func zigzagLevelOrder(root *treenode.TreeNode) [][]int {
+func zigzagLevelOrder(root *mytreenode.TreeNode) [][]int {
 	var res [][]int
 	cnt := 0
-	var queue []*treenode.TreeNode
+	var queue []*mytreenode.TreeNode
 	if root == nil {
 		return res
 	}

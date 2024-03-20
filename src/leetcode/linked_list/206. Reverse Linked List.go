@@ -1,7 +1,5 @@
 package linked_list
 
-import "leetcode/src/define/linkednode"
-
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -9,13 +7,13 @@ import "leetcode/src/define/linkednode"
  *     Next *ListNode
  * }
  */
-func reverseList(head *linkednode.ListNode) *linkednode.ListNode {
+func reverseList(head *mylinkednode.ListNode) *mylinkednode.ListNode {
 	_, newHead := reverse(head)
 	return newHead
 
 }
 
-func reverse(head *linkednode.ListNode) (last, newHead *linkednode.ListNode) {
+func reverse(head *mylinkednode.ListNode) (last, newHead *mylinkednode.ListNode) {
 	if head == nil || head.Next == nil {
 		return head, head
 	}

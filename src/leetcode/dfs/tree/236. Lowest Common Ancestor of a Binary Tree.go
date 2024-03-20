@@ -1,7 +1,5 @@
 package tree
 
-import "leetcode/src/define/treenode"
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -10,7 +8,7 @@ import "leetcode/src/define/treenode"
  *     Right *TreeNode
  * }
  */
-func lowestCommonAncestor(root, p, q *treenode.TreeNode) *treenode.TreeNode {
+func lowestCommonAncestor(root, p, q *mytreenode.TreeNode) *mytreenode.TreeNode {
 	if root == nil {
 		return nil
 	}

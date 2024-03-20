@@ -1,6 +1,6 @@
 package linked_list
 
-import "leetcode/src/define/linkednode"
+import "leetcode/src/define/mylinkednode"
 
 /**
  * Definition for singly-linked list.
@@ -10,7 +10,7 @@ import "leetcode/src/define/linkednode"
  * }
  */
 
-func reverseKGroup(head *linkednode.ListNode, k int) *linkednode.ListNode {
+func reverseKGroup(head *mylinkednode.ListNode, k int) *mylinkednode.ListNode {
 	node, cnt := head, 0
 	for cnt < k {
 		if node == nil {

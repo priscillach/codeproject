@@ -1,6 +1,8 @@
 package linked_list
 
-import "leetcode/src/define/linkednode"
+import (
+	"leetcode/src/define/mylinkednode"
+)
 
 /**
  * Definition for singly-linked list.
@@ -10,7 +12,7 @@ import "leetcode/src/define/linkednode"
  * }
  */
 
-func hasCycle(head *linkednode.ListNode) bool {
+func hasCycle(head *mylinkednode.ListNode) bool {
 	one := head
 	two := head
 	for two != nil && two.Next != nil {

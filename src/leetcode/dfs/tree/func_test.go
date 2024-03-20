@@ -2,42 +2,41 @@ package tree
 
 import (
 	"github.com/stretchr/testify/assert"
-	"leetcode/src/define/treenode"
 	"testing"
 )
 
 func TestLowestCommonAncestor(t *testing.T) {
-	root := &treenode.TreeNode{
+	root := &mytreenode.TreeNode{
 		Val: 3,
-		Left: &treenode.TreeNode{
+		Left: &mytreenode.TreeNode{
 			Val: 5,
-			Left: &treenode.TreeNode{
+			Left: &mytreenode.TreeNode{
 				Val:   6,
 				Left:  nil,
 				Right: nil,
 			},
-			Right: &treenode.TreeNode{
+			Right: &mytreenode.TreeNode{
 				Val: 2,
-				Left: &treenode.TreeNode{
+				Left: &mytreenode.TreeNode{
 					Val:   7,
 					Left:  nil,
 					Right: nil,
 				},
-				Right: &treenode.TreeNode{
+				Right: &mytreenode.TreeNode{
 					Val:   4,
 					Left:  nil,
 					Right: nil,
 				},
 			},
 		},
-		Right: &treenode.TreeNode{
+		Right: &mytreenode.TreeNode{
 			Val: 1,
-			Left: &treenode.TreeNode{
+			Left: &mytreenode.TreeNode{
 				Val:   0,
 				Left:  nil,
 				Right: nil,
 			},
-			Right: &treenode.TreeNode{
+			Right: &mytreenode.TreeNode{
 				Val:   8,
 				Left:  nil,
 				Right: nil,

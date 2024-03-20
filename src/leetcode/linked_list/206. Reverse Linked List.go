@@ -1,5 +1,7 @@
 package linked_list
 
+import "leetcode/src/define/mylinkednode"
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {

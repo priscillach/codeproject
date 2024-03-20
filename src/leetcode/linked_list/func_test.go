@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/stretchr/testify/assert"
+	"leetcode/src/define/mylinkednode"
 	"testing"
 )
 

@@ -1,5 +1,7 @@
 package tree
 
+import "leetcode/src/define/mytreenode"
+
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {

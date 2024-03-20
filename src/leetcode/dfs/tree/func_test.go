@@ -2,6 +2,7 @@ package tree
 
 import (
 	"github.com/stretchr/testify/assert"
+	"leetcode/src/define/mytreenode"
 	"testing"
 )
 

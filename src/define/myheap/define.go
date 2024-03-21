@@ -1,6 +1,9 @@
 package myheap
 
-import "container/heap"
+import (
+	"container/heap"
+	"leetcode/src/define/mylinkednode"
+)
 
 type MaxHeap []int
 
@@ -36,6 +39,22 @@ func (h *MinHeap) Pop() interface{} {
 	x := old[n-1]
 	*h = old[0 : n-1]
 	return x
+}
+
+type MinLinkedNodeHeap []*mylinkednode.ListNode
+
+func (h MinLinkedNodeHeap) Len() int           { return len(h) }
+func (h MinLinkedNodeHeap) Less(i, j int) bool { return h[i].Val <= h[j].Val }
+func (h MinLinkedNodeHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+
+func (h *MinLinkedNodeHeap) Push(x interface{}) {
+	*h = append(*h, x.(*mylinkednode.ListNode))
+}
+
+func (h *MinLinkedNodeHeap) Pop() interface{} {
+	res := (*h)[len(*h)-1]
+	*h = (*h)[:len(*h)-1]
+	return res
 }
 
 func HeapSortDesc(arr []int) {

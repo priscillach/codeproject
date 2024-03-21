@@ -8,7 +8,7 @@ import (
 )
 
 func TestHeapSort(t *testing.T) {
-	arr := []int{12, 11, 13, 5, 6, 7}
+	arr := []int{12, 4, 5, 6, 7, 11, 13, 5, 6, 7}
 	fmt.Println("Unsorted array:", arr)
 	HeapSortAsc(arr)
 	fmt.Println("Sorted asc array:", arr)
@@ -19,7 +19,7 @@ func TestHeapSort(t *testing.T) {
 func TestMyHeap(t *testing.T) {
 	h := &MinHeap{}
 	heap.Init(h)
-	arr := []int{12, 11, 13, 5, 6, 7}
+	arr := []int{12, 4, 5, 6, 7, 11, 13, 5, 6, 7}
 	for _, x := range arr {
 		heap.Push(h, x)
 	}

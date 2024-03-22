@@ -1,5 +1,7 @@
 package dp
 
+import "leetcode/src/utils"
+
 func minDistance(word1 string, word2 string) int {
 	len1 := len(word1)
 	len2 := len(word2)
@@ -14,20 +16,13 @@ func minDistance(word1 string, word2 string) int {
 	}
 	for i := 1; i <= len1; i++ {
 		for j := 1; j <= len2; j++ {
-			minD := min(distance[i][j-1]+1, distance[i-1][j]+1)
+			minD := utils.Min(distance[i][j-1]+1, distance[i-1][j]+1)
 			if word1[i-1] == word2[j-1] {
-				distance[i][j] = min(distance[i-1][j-1], minD)
+				distance[i][j] = utils.Min(distance[i-1][j-1], minD)
 			} else {
-				distance[i][j] = min(distance[i-1][j-1]+1, minD)
+				distance[i][j] = utils.Min(distance[i-1][j-1]+1, minD)
 			}
 		}
 	}
 	return distance[len1][len2]
-}
-
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
 }

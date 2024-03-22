@@ -8,7 +8,7 @@ func nextPermutation(nums []int) {
 		if nums[i] > nums[i-1] {
 			j := findLarger(nums, i, nums[i-1])
 			nums[i-1], nums[j] = nums[j], nums[i-1]
-			_sort.FastSortCore(nums, i, len(nums)-1)
+			_sort.FastSortByRange(nums, i, len(nums)-1)
 			return
 		}
 	}

@@ -8,78 +8,29 @@ import (
 )
 
 func TestMergeTwoSortedLists(t *testing.T) {
-	list1 := &mylinkednode.ListNode{
-		Val: 1,
-		Next: &mylinkednode.ListNode{
-			Val: 3,
-			Next: &mylinkednode.ListNode{
-				Val:  4,
-				Next: nil,
-			},
-		},
-	}
-	list2 := &mylinkednode.ListNode{
-		Val: 1,
-		Next: &mylinkednode.ListNode{
-			Val: 2,
-			Next: &mylinkednode.ListNode{
-				Val:  4,
-				Next: nil,
-			},
-		},
-	}
+	list1 := mylinkednode.BuildListNode([]int{1, 3, 4})
+	list2 := mylinkednode.BuildListNode([]int{1, 2, 4})
 	fmt.Println(mergeTwoLists(list1, list2))
 	fmt.Println(mergeTwoListsV2(list1, list2))
 }
 
 func TestReverseBetween(t *testing.T) {
-	head := &mylinkednode.ListNode{
-		Val: 1,
-		Next: &mylinkednode.ListNode{
-			Val: 2,
-			Next: &mylinkednode.ListNode{
-				Val: 3,
-				Next: &mylinkednode.ListNode{
-					Val: 4,
-					Next: &mylinkednode.ListNode{
-						Val:  5,
-						Next: nil,
-					},
-				},
-			},
-		},
-	}
-	assert.Equal(t, reverseBetween(head, 2, 4).Val, 1)
+	head := mylinkednode.BuildListNode([]int{1, 2, 3, 4, 5})
+	assert.Equal(t, ReverseBetween(head, 2, 4).Val, 1)
 }
 
 func TestMergeKLists(t *testing.T) {
 	// [[1,4,5],[1,3,4],[2,6]]
 	lists := []*mylinkednode.ListNode{
-		{
-			Val: 1,
-			Next: &mylinkednode.ListNode{
-				Val: 4,
-				Next: &mylinkednode.ListNode{
-					Val: 5,
-				},
-			},
-		},
-		{
-			Val: 1,
-			Next: &mylinkednode.ListNode{
-				Val: 3,
-				Next: &mylinkednode.ListNode{
-					Val: 4,
-				},
-			},
-		},
-		{
-			Val: 2,
-			Next: &mylinkednode.ListNode{
-				Val: 6,
-			},
-		},
+		mylinkednode.BuildListNode([]int{1, 4, 5}),
+		mylinkednode.BuildListNode([]int{1, 3, 4}),
+		mylinkednode.BuildListNode([]int{2, 6}),
 	}
 	mergeKLists(lists)
 
+}
+
+func TestReorderList(t *testing.T) {
+	head := mylinkednode.BuildListNode([]int{1, 2, 3, 4, 5})
+	reorderList(head)
 }

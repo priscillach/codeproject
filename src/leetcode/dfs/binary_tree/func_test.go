@@ -3,49 +3,20 @@ package binary_tree
 import (
 	"github.com/stretchr/testify/assert"
 	"leetcode/src/define/mytreenode"
+	"leetcode/src/utils"
+	"math"
 	"testing"
 )
 
 func TestLowestCommonAncestor(t *testing.T) {
-	root := &mytreenode.TreeNode{
-		Val: 3,
-		Left: &mytreenode.TreeNode{
-			Val: 5,
-			Left: &mytreenode.TreeNode{
-				Val:   6,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &mytreenode.TreeNode{
-				Val: 2,
-				Left: &mytreenode.TreeNode{
-					Val:   7,
-					Left:  nil,
-					Right: nil,
-				},
-				Right: &mytreenode.TreeNode{
-					Val:   4,
-					Left:  nil,
-					Right: nil,
-				},
-			},
-		},
-		Right: &mytreenode.TreeNode{
-			Val: 1,
-			Left: &mytreenode.TreeNode{
-				Val:   0,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &mytreenode.TreeNode{
-				Val:   8,
-				Left:  nil,
-				Right: nil,
-			},
-		},
-	}
+	root, _ := mytreenode.BuildBinaryTree(utils.NumsSlice2NumsPtrSlice([]int{3, 5, 1, 6, 2, 0, 8, math.MinInt, math.MinInt, 7, 4}))
 	p := root.Left
 	q := root.Right
 
 	assert.Equal(t, lowestCommonAncestor(root, p, q).Val, 3)
+}
+
+func TestMaxPathSum(t *testing.T) {
+	root, _ := mytreenode.BuildBinaryTree(utils.NumsSlice2NumsPtrSlice([]int{-10, 9, 20, math.MinInt, math.MinInt, 15, 7}))
+	assert.Equal(t, maxPathSum(root), 42)
 }

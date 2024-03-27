@@ -21,3 +21,16 @@ func Min(nums ...int) int {
 	}
 	return min
 }
+
+func NumsSlice2NumsPtrSlice(nums []int) []*int {
+	var res []*int
+	for _, num := range nums {
+		if num == math.MinInt {
+			res = append(res, nil)
+		} else {
+			numC := num
+			res = append(res, &numC)
+		}
+	}
+	return res
+}

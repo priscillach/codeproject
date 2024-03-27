@@ -2,7 +2,6 @@ package mytreenode
 
 import (
 	"errors"
-	"math"
 )
 
 type TreeNode struct {
@@ -41,17 +40,4 @@ func BuildBinaryTree(nums []*int) (*TreeNode, error) {
 		}
 	}
 	return treeNodes[0], nil
-}
-
-func NumsSlice2NumsPtrSlice(nums []int) []*int {
-	var res []*int
-	for _, num := range nums {
-		if num == math.MinInt {
-			res = append(res, nil)
-		} else {
-			numC := num
-			res = append(res, &numC)
-		}
-	}
-	return res
 }

@@ -1,4 +1,4 @@
-package tree
+package binary_tree
 
 import "leetcode/src/define/mytreenode"
 

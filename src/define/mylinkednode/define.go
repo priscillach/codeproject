@@ -5,7 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func BuildListNode(nums []int) *ListNode {
+func BuildLinkedList(nums []int) *ListNode {
 	if len(nums) == 0 {
 		return nil
 	}

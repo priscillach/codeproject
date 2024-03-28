@@ -10,7 +10,42 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// BuildBinaryTreeV2 [1, nil, 2, 3]
+// BFS for every layer the nil leaf is ignored
+func BuildBinaryTreeV2(nums []*int) *TreeNode {
+	if len(nums) == 0 || nums[0] == nil {
+		return nil
+	}
+
+	// Create the root node
+	root := &TreeNode{Val: *nums[0]}
+	queue := []*TreeNode{root}
+	index := 1
+
+	for len(queue) > 0 && index < len(nums) {
+		node := queue[0]
+		queue = queue[1:]
+
+		// Left child
+		if index < len(nums) && nums[index] != nil {
+			node.Left = &TreeNode{Val: *nums[index]}
+			queue = append(queue, node.Left)
+		}
+		index++
+
+		// Right child
+		if index < len(nums) && nums[index] != nil {
+			node.Right = &TreeNode{Val: *nums[index]}
+			queue = append(queue, node.Right)
+		}
+		index++
+	}
+
+	return root
+}
+
 // BuildBinaryTree [-10,9,20,null,null,15,7]
+// for every layer the nil leaf should be filled
 func BuildBinaryTree(nums []*int) (*TreeNode, error) {
 	if len(nums) == 0 || nums[0] == nil {
 		return nil, nil

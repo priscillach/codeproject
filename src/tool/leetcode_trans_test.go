@@ -8,19 +8,22 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func removeNthFromEnd(head *mylinkednode.ListNode, n int) *mylinkednode.ListNode {
-	newHead := &mylinkednode.ListNode{Next: head}
-	first := newHead
-	for i := 0; i < n; i++ {
-		first = first.Next
+func longestCommonSubsequence(text1 string, text2 string) int {
+	len1 := len(text1)
+	len2 := len(text2)
+	dp := make([][]int, len1+1)
+	for i := 0; i <= len1; i++ {
+		dp[i] = make([]int, len2+1)
 	}
-	second := newHead
-	for first != nil && first.Next != nil {
-		first = first.Next
-		second = second.Next
+	for i := 1; i <= len1; i++ {
+		for j := 1; j <= len2; j++ {
+			if text1[i-1] == text2[j-1] {
+				dp[i][j] = utils.Max(dp[i][j], dp[i-1][j-1]+1)
+			}
+			dp[i][j] = utils.Max(dp[i][j], dp[i-1][j], dp[i][j-1])
+		}
 	}
-	second.Next = second.Next.Next
-	return newHead.Next
+	return dp[len1][len2]
 }
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
@@ -28,22 +31,28 @@ func removeNthFromEnd(head *mylinkednode.ListNode, n int) *mylinkednode.ListNode
 	if strings.Contains(transCode, "utils.Max") {
 		transCode = strings.ReplaceAll(transCode, "utils.Max", "max")
 		transCode += `
-func max(a, b int) int {
-	if a > b {
-		return a
+func max(nums... int) int {
+	max := math.MinInt32
+	for i := range nums {
+		if nums[i] > max {
+			max = nums[i]
+		}
 	}
-	return b
+	return max
 }
 `
 	}
 	if strings.Contains(transCode, "utils.Min") {
 		transCode = strings.ReplaceAll(transCode, "utils.Min", "max")
 		transCode += `
-func min(a, b int) int {
-	if a > b {
-		return b
+func min(nums... int) int {
+	min := math.MaxInt32
+	for i := range nums {
+		if nums[i] < min {
+			min = nums[i]
+		}
 	}
-	return a
+	return min
 }
 `
 	}

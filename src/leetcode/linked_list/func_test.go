@@ -34,3 +34,7 @@ func TestReorderList(t *testing.T) {
 	head := mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5})
 	reorderList(head)
 }
+
+func TestDeleteDuplicates(t *testing.T) {
+	deleteDuplicates(mylinkednode.BuildLinkedList([]int{1, 1}))
+}

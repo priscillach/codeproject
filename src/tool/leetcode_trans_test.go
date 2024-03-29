@@ -8,51 +8,39 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-var IpAddresses []string
-
-func restoreIpAddresses(s string) []string {
-	IpAddresses = make([]string, 0)
-	var parts []string
-	dfsRestoreIpAddresses(s, parts)
-	return IpAddresses
-}
-
-func dfsRestoreIpAddresses(s string, parts []string) {
-	if len(parts) == 4 {
-		IpAddresses = append(IpAddresses, strings.Join(parts, "."))
-		return
+func deleteDuplicates(head *mylinkednode.ListNode) *mylinkednode.ListNode {
+	newHead := &mylinkednode.ListNode{
+		Next: head,
+		Val:  math.MinInt,
 	}
-	if len(parts) == 3 {
-		if isValid(s) {
-			dfsRestoreIpAddresses("", append(parts, s))
+	cur := newHead
+	for cur != nil {
+		if next, isDuplicate := detectDuplicates(cur.Next); isDuplicate {
+			cur.Next = next
+			continue
 		}
-		return
+		cur = cur.Next
 	}
-	for i := 1; i <= utils.Min(len(s), 3); i++ {
-		if isValid(s[:i]) {
-			parts = append(parts, s[:i])
-			dfsRestoreIpAddresses(s[i:], parts)
-			parts = parts[:len(parts)-1]
-		}
-	}
+	return newHead.Next
 }
 
-func isValid(s string) bool {
-	if s == "" {
-			return false
+func detectDuplicates(head *mylinkednode.ListNode) (*mylinkednode.ListNode, bool) {
+	if head == nil {
+		return nil, false
 	}
-	if s[0] == '0' && len(s) > 1 {
-		return false
+	val := head.Val
+	cnt := 0
+	head = head.Next
+	for head != nil {
+		if head.Val != val {
+			break
+		}
+		head = head.Next
+		cnt++
 	}
-	t, err := strconv.ParseInt(s, 10, 64)
-	if err != nil {
-		return false
-	}
-	if int(t) < 0 || int(t) > 255 {
-		return false
-	}
-	return true
+	return head, cnt > 0
 }
+
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
 	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")

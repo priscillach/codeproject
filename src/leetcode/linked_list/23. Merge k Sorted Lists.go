@@ -6,14 +6,6 @@ import (
 	"leetcode/src/define/mylinkednode"
 )
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-
 func mergeKLists(lists []*mylinkednode.ListNode) *mylinkednode.ListNode {
 	newHead := &mylinkednode.ListNode{}
 	cur := newHead

@@ -4,14 +4,6 @@ import (
 	"leetcode/src/define/mylinkednode"
 )
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-
 func hasCycle(head *mylinkednode.ListNode) bool {
 	one := head
 	two := head

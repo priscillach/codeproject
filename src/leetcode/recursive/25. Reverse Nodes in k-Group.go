@@ -2,14 +2,6 @@ package linked_list
 
 import "leetcode/src/define/mylinkednode"
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
-
 func reverseKGroup(head *mylinkednode.ListNode, k int) *mylinkednode.ListNode {
 	node, cnt := head, 0
 	for cnt < k {

@@ -1,13 +1,11 @@
-package tool
+package string_resolve
 
 import (
-	"fmt"
+	"leetcode/src/utils"
+	"strconv"
 	"strings"
-	"testing"
 )
 
-func TestTransLCP(t *testing.T) {
-	transCode := `
 var IpAddresses []string
 
 func restoreIpAddresses(s string) []string {
@@ -39,7 +37,7 @@ func dfsRestoreIpAddresses(s string, parts []string) {
 
 func isValid(s string) bool {
 	if s == "" {
-			return false
+		return false
 	}
 	if s[0] == '0' && len(s) > 1 {
 		return false
@@ -52,37 +50,4 @@ func isValid(s string) bool {
 		return false
 	}
 	return true
-}
-`
-	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
-	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")
-	if strings.Contains(transCode, "utils.Max") {
-		transCode = strings.ReplaceAll(transCode, "utils.Max", "max")
-		transCode += `
-func max(nums... int) int {
-	max := math.MinInt32
-	for i := range nums {
-		if nums[i] > max {
-			max = nums[i]
-		}
-	}
-	return max
-}
-`
-	}
-	if strings.Contains(transCode, "utils.Min") {
-		transCode = strings.ReplaceAll(transCode, "utils.Min", "min")
-		transCode += `
-func min(nums... int) int {
-	min := math.MaxInt32
-	for i := range nums {
-		if nums[i] < min {
-			min = nums[i]
-		}
-	}
-	return min
-}
-`
-	}
-	fmt.Println(transCode)
 }

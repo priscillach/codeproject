@@ -1,4 +1,4 @@
-package struct_design
+package lru_cache
 
 type Node struct {
 	prev, next *Node

@@ -2,15 +2,6 @@ package bfs
 
 import "leetcode/src/define/mytreenode"
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
-
 func findBottomLeftValue(root *mytreenode.TreeNode) int {
 	queue := make([]*mytreenode.TreeNode, 0)
 	queue = append(queue, root)

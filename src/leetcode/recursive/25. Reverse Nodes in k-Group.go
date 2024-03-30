@@ -1,4 +1,4 @@
-package linked_list
+package recursive
 
 import "leetcode/src/define/mylinkednode"
 

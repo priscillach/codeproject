@@ -1,4 +1,4 @@
-package binary_tree
+package divide_and_conquer
 
 import "leetcode/src/define/mytreenode"
 

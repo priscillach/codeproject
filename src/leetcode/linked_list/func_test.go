@@ -38,3 +38,7 @@ func TestReorderList(t *testing.T) {
 func TestDeleteDuplicates(t *testing.T) {
 	deleteDuplicates(mylinkednode.BuildLinkedList([]int{1, 1}))
 }
+
+func TestSortList(t *testing.T) {
+	sortList(mylinkednode.BuildLinkedList([]int{4, 2, 1, 3}))
+}

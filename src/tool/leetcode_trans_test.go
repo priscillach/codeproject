@@ -8,37 +8,45 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func deleteDuplicates(head *mylinkednode.ListNode) *mylinkednode.ListNode {
-	newHead := &mylinkednode.ListNode{
-		Next: head,
-		Val:  math.MinInt,
+func sortList(head *mylinkednode.ListNode) *mylinkednode.ListNode {
+	if head == nil || head.Next == nil {
+		return head
 	}
-	cur := newHead
-	for cur != nil {
-		if next, isDuplicate := detectDuplicates(cur.Next); isDuplicate {
-			cur.Next = next
-			continue
-		}
-		cur = cur.Next
+	slow, fast := head, head
+	for fast.Next != nil && fast.Next.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
 	}
-	return newHead.Next
+
+	tmp := slow.Next
+	slow.Next = nil
+	head1 := sortList(head)
+	head2 := sortList(tmp)
+	return mergeTwoListsV2(head1, head2)
 }
 
-func detectDuplicates(head *mylinkednode.ListNode) (*mylinkednode.ListNode, bool) {
-	if head == nil {
-		return nil, false
-	}
-	val := head.Val
-	cnt := 0
-	head = head.Next
-	for head != nil {
-		if head.Val != val {
-			break
+func mergeTwoListsV2(list1 *mylinkednode.ListNode, list2 *mylinkednode.ListNode) *mylinkednode.ListNode {
+	cur1 := list1
+	cur2 := list2
+	head := &mylinkednode.ListNode{}
+	cur3 := head
+	for cur1 != nil && cur2 != nil {
+		if cur1.Val > cur2.Val {
+			cur3.Next = cur2
+			cur2 = cur2.Next
+		} else {
+			cur3.Next = cur1
+			cur1 = cur1.Next
 		}
-		head = head.Next
-		cnt++
+		cur3 = cur3.Next
 	}
-	return head, cnt > 0
+	if cur1 != nil {
+		cur3.Next = cur1
+	}
+	if cur2 != nil {
+		cur3.Next = cur2
+	}
+	return head.Next
 }
 
 `

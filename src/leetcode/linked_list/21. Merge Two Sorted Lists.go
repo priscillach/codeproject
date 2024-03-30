@@ -4,9 +4,7 @@ import (
 	"leetcode/src/define/mylinkednode"
 )
 
-func mergeTwoLists(list1 *mylinkednode.ListNode, list2 *mylinkednode.ListNode) *mylinkednode.ListNode {
-	cur1 := list1
-	cur2 := list2
+func mergeTwoLists(cur1 *mylinkednode.ListNode, cur2 *mylinkednode.ListNode) *mylinkednode.ListNode {
 	head := &mylinkednode.ListNode{}
 	cur3 := head
 	for cur1 != nil && cur2 != nil {
@@ -31,9 +29,7 @@ func mergeTwoLists(list1 *mylinkednode.ListNode, list2 *mylinkednode.ListNode) *
 	return head.Next
 }
 
-func mergeTwoListsV2(list1 *mylinkednode.ListNode, list2 *mylinkednode.ListNode) *mylinkednode.ListNode {
-	cur1 := list1
-	cur2 := list2
+func mergeTwoListsV2(cur1 *mylinkednode.ListNode, cur2 *mylinkednode.ListNode) *mylinkednode.ListNode {
 	head := &mylinkednode.ListNode{}
 	cur3 := head
 	for cur1 != nil && cur2 != nil {

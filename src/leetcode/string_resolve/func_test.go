@@ -12,3 +12,8 @@ func TestAddStrings(t *testing.T) {
 func TestRestoreIpAddresses(t *testing.T) {
 	fmt.Println(restoreIpAddresses("101023"))
 }
+
+func TestMyAtoi(t *testing.T) {
+	myAtoi("4193 with words")
+	fmt.Println('0', '9')
+}

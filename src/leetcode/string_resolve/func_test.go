@@ -17,3 +17,7 @@ func TestMyAtoi(t *testing.T) {
 	myAtoi("4193 with words")
 	fmt.Println('0', '9')
 }
+
+func TestCompareVersion(t *testing.T) {
+	compareVersion("1.01", "1.001")
+}

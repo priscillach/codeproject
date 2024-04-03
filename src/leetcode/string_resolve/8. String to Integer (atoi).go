@@ -1,5 +1,7 @@
 package string_resolve
 
+import "leetcode/src/utils"
+
 func myAtoi(s string) int {
 	s = trim(s)
 	sign := getSign(s)
@@ -19,7 +21,7 @@ func myAtoi(s string) int {
 		if s[i] == '0' && res == 0 {
 			continue
 		}
-		cur := NumByte2Int(s[i])
+		cur := utils.NumByte2Int(s[i])
 		if sign == 1 && cur > 1<<31-1-10*res {
 			return 1<<31 - 1
 		}
@@ -64,8 +66,4 @@ func getSign(s string) int {
 		return -1
 	}
 	return 1
-}
-
-func NumByte2Int(b byte) int {
-	return int(b - '0')
 }

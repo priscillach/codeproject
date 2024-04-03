@@ -2,7 +2,7 @@ package string_resolve
 
 import "leetcode/src/utils"
 
-func addStrings(num1 string, num2 string) string {
+func AddStrings(num1 string, num2 string) string {
 	len1 := len(num1)
 	len2 := len(num2)
 	lenM := utils.Max(len1, len2)

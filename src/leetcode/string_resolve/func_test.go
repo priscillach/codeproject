@@ -6,7 +6,7 @@ import (
 )
 
 func TestAddStrings(t *testing.T) {
-	fmt.Println(addStrings("125", "92"))
+	fmt.Println(AddStrings("125", "92"))
 }
 
 func TestRestoreIpAddresses(t *testing.T) {
@@ -20,4 +20,9 @@ func TestMyAtoi(t *testing.T) {
 
 func TestCompareVersion(t *testing.T) {
 	compareVersion("1.01", "1.001")
+}
+
+func TestMultiply(t *testing.T) {
+	Multiply("123", "456")
+	Multiply("9133", "0")
 }

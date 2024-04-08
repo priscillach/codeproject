@@ -26,3 +26,8 @@ func TestIsBalanced(t *testing.T) {
 	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{1, 2, 2, 3, math.MinInt, math.MinInt, 3, 4, math.MinInt, math.MinInt, 4}))
 	fmt.Println(isBalanced(root))
 }
+
+func TestDiameterOfBinaryTree(t *testing.T) {
+	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{1, 2, 3, 4, 5}))
+	diameterOfBinaryTree(root)
+}

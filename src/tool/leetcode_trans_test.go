@@ -8,21 +8,21 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func longestValidParentheses(s string) int {
-	var stack []int
-	maxLen := 0
-	for i := 0; i < len(s); i++ {
-		stack = append(stack, i)
-		for len(stack) >= 2 && s[stack[len(stack)-1]] == ')' && s[stack[len(stack)-2]] == '(' {
-			stack = stack[:len(stack)-2]
-		}
-		if len(stack) > 0 {
-			maxLen = utils.Max(maxLen, i - stack[len(stack)-1])
-		} else {
-			maxLen = i + 1
-		}
+var diameterOfBinaryTreeMax int
+func diameterOfBinaryTree(root *mytreenode.TreeNode) int {
+	diameterOfBinaryTreeMax = 0
+	diameterOfBinaryTreeCore(root)
+	return diameterOfBinaryTreeMax
+}
+
+func diameterOfBinaryTreeCore(root *mytreenode.TreeNode) int {
+	if root == nil {
+		return 0
 	}
-	return maxLen
+	depthLeft := diameterOfBinaryTree(root.Left)
+	depthRight := diameterOfBinaryTree(root.Right)
+	diameterOfBinaryTreeMax = utils.Max(diameterOfBinaryTreeMax, depthLeft + depthRight)
+	return utils.Max(depthLeft, depthRight) + 1
 }
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")

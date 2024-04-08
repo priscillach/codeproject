@@ -34,3 +34,7 @@ func NumsSlice2NumsPtrSlice(nums []int) []*int {
 	}
 	return res
 }
+
+func Abs(num int) int {
+	return int(math.Abs(float64(num)))
+}

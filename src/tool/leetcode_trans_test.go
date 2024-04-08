@@ -55,5 +55,14 @@ func min(nums... int) int {
 }
 `
 	}
+
+	if strings.Contains(transCode, "utils.Abs") {
+		transCode = strings.ReplaceAll(transCode, "utils.Abs", "abs")
+		transCode += `
+func Abs(num int) int {
+	return int(math.Abs(float64(num)))
+}
+`
+	}
 	fmt.Println(transCode)
 }

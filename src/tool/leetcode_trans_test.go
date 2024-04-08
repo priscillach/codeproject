@@ -8,47 +8,22 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func sortList(head *mylinkednode.ListNode) *mylinkednode.ListNode {
-	if head == nil || head.Next == nil {
-		return head
-	}
-	slow, fast := head, head
-	for fast.Next != nil && fast.Next.Next != nil {
-		slow = slow.Next
-		fast = fast.Next.Next
-	}
-
-	tmp := slow.Next
-	slow.Next = nil
-	head1 := sortList(head)
-	head2 := sortList(tmp)
-	return mergeTwoListsV2(head1, head2)
-}
-
-func mergeTwoListsV2(list1 *mylinkednode.ListNode, list2 *mylinkednode.ListNode) *mylinkednode.ListNode {
-	cur1 := list1
-	cur2 := list2
-	head := &mylinkednode.ListNode{}
-	cur3 := head
-	for cur1 != nil && cur2 != nil {
-		if cur1.Val > cur2.Val {
-			cur3.Next = cur2
-			cur2 = cur2.Next
-		} else {
-			cur3.Next = cur1
-			cur1 = cur1.Next
+func longestValidParentheses(s string) int {
+	var stack []int
+	maxLen := 0
+	for i := 0; i < len(s); i++ {
+		stack = append(stack, i)
+		for len(stack) >= 2 && s[stack[len(stack)-1]] == ')' && s[stack[len(stack)-2]] == '(' {
+			stack = stack[:len(stack)-2]
 		}
-		cur3 = cur3.Next
+		if len(stack) > 0 {
+			maxLen = utils.Max(maxLen, i - stack[len(stack)-1])
+		} else {
+			maxLen = i + 1
+		}
 	}
-	if cur1 != nil {
-		cur3.Next = cur1
-	}
-	if cur2 != nil {
-		cur3.Next = cur2
-	}
-	return head.Next
+	return maxLen
 }
-
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
 	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")

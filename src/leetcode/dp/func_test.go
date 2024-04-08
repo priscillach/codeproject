@@ -12,3 +12,7 @@ func TestLongestPalindromeV2(t *testing.T) {
 
 	fmt.Println(s[1] == s[2])
 }
+
+func TestLongestValidParentheses(t *testing.T) {
+	longestValidParentheses(")()())")
+}

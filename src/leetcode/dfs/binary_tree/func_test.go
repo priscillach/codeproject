@@ -31,3 +31,8 @@ func TestDiameterOfBinaryTree(t *testing.T) {
 	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{1, 2, 3, 4, 5}))
 	diameterOfBinaryTree(root)
 }
+
+func TestIsValidBST(t *testing.T) {
+	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{math.MaxInt32}))
+	isValidBST(root)
+}

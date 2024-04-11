@@ -1,4 +1,4 @@
-package unclassified
+package matrix
 
 func rotate(matrix [][]int) {
 	n := len(matrix)

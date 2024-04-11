@@ -1,4 +1,4 @@
-package unclassified
+package matrix
 
 func searchMatrix(matrix [][]int, target int) bool {
 	x, y := 0, len(matrix[0])-1

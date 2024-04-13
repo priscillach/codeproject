@@ -36,3 +36,8 @@ func TestIsValidBST(t *testing.T) {
 	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{math.MaxInt32}))
 	isValidBST(root)
 }
+
+func TestHasPathSum(t *testing.T) {
+	root := mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{5, 4, 8, 11, math.MinInt, 13, 4, 7, 2, math.MinInt, math.MinInt, math.MinInt, 1}))
+	hasPathSum(root, 22)
+}

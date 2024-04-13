@@ -2,6 +2,7 @@ package binarysearch
 
 import (
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
@@ -23,4 +24,8 @@ func TestLengthOfLIS(t *testing.T) {
 
 func TestMSqrt(t *testing.T) {
 	fmt.Println(mySqrt(8))
+}
+
+func TestFindPeakElement(t *testing.T) {
+	assert.Equal(t, findPeakElement([]int{1, 2, 3, 1}), 2)
 }

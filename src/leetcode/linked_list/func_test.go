@@ -42,3 +42,7 @@ func TestDeleteDuplicates(t *testing.T) {
 func TestSortList(t *testing.T) {
 	sortList(mylinkednode.BuildLinkedList([]int{4, 2, 1, 3}))
 }
+
+func TestIsPalindrome(t *testing.T) {
+	assert.Equal(t, isPalindrome(mylinkednode.BuildLinkedList([]int{1, 0, 1})), true)
+}

@@ -21,3 +21,7 @@ func TestLongestValidParentheses(t *testing.T) {
 func TestMaximalSquare(t *testing.T) {
 	assert.Equal(t, maximalSquare([][]byte{{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}}), 4)
 }
+
+func TestFindLength(t *testing.T) {
+	findLength([]int{1, 2, 3, 2, 8}, []int{5, 6, 1, 4, 7})
+}

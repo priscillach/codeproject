@@ -10,3 +10,7 @@ func TestBubbleSort(t *testing.T) {
 	BubbleSort(nums)
 	fmt.Println(nums)
 }
+
+func TestLargestNumber(t *testing.T) {
+	fmt.Println(largestNumber([]int{34323, 3432}))
+}

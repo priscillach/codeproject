@@ -8,25 +8,47 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func minPathSum(grid [][]int) int {
-	dp := make([][]int, len(grid))
-	for i := 0; i < len(grid); i++ {
-		dp[i] = make([]int, len(grid[0]))
-	}
-	for i := 0; i < len(grid); i++ {
-		for j := 0; j < len(grid[0]); j++ {
-			if i == 0 && j == 0 {
-				dp[i][j] = grid[i][j]
-			} else if i == 0 {
-				dp[i][j] = grid[i][j] + dp[i][j - 1]
-			} else if j == 0 {
-				dp[i][j] = grid[i][j] + dp[i - 1][j]
+func largestNumber(nums []int) string {
+	sort.Slice(nums, func(i, j int) bool {
+		var nums1, nums2 []int
+		num1, num2 := nums[i], nums[j]
+		for num1 != 0 || num2 != 0 {
+			if num1 > 0 {
+				nums1 = append(nums1, num1%10)
+			}
+			if num2 > 0 {
+				nums2 = append(nums2, num2%10)
+			}
+			num1 /= 10
+			num2 /= 10
+		}
+		idx1 := len(nums1) - 1
+		idx2 := len(nums2) - 1
+		for cnt := 0; cnt < utils.Lcm(len(nums1), len(nums2)); cnt++ {
+			if idx1 == 0 {
+				idx1 = len(nums1) - 1
+			}
+			if idx2 == 0 {
+				idx2 = len(nums2) - 1
+			}
+			num1, num2 = nums1[idx1], nums2[idx2]
+			idx1--
+			idx2--
+			if num1 == num2 {
+				continue
+			} else if num1 > num2 {
+				return true
 			} else {
-				dp[i][j] = utils.Min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j]
+				return false
 			}
 		}
+		return true
+	})
+	var res strings.Builder
+	for _, num := range nums {
+		res.WriteString(strconv.Itoa(num))
 	}
-	return dp[len(grid) - 1][len(grid[0]) - 1]
+	return res.String()
 }
 
 `
@@ -57,6 +79,33 @@ func min(nums... int) int {
 		}
 	}
 	return min
+}
+`
+	}
+	if strings.Contains(transCode, "utils.Lcm") {
+		transCode = strings.ReplaceAll(transCode, "utils.Lcm", "lcm")
+		transCode += `
+func gcd(a, b int) int {
+	for b != 0 {
+		a, b = b, a%b
+	}
+	return a
+}
+
+func lcm(a, b int) int {
+	return a * b / gcd(a, b)
+}
+`
+	}
+
+	if strings.Contains(transCode, "utils.Gcd") {
+		transCode = strings.ReplaceAll(transCode, "utils.Gcd", "gcd")
+		transCode += `
+func gcd(a, b int) int {
+	for b != 0 {
+		a, b = b, a%b
+	}
+	return a
 }
 `
 	}

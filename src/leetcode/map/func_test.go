@@ -1,6 +1,9 @@
 package _map
 
-import "testing"
+import (
+	"github.com/stretchr/testify/assert"
+	"testing"
+)
 
 func TestLengthOfLongestSubstring(t *testing.T) {
 	lengthOfLongestSubstring("sbacdafgs")
@@ -8,4 +11,8 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 
 func TestMinWindow(t *testing.T) {
 	minWindow("ADOBECODEBANC", "ABC")
+}
+
+func TestLongestConsecutive(t *testing.T) {
+	assert.Equal(t, 9, longestConsecutive([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
 }

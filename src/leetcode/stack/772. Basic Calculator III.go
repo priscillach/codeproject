@@ -2,13 +2,33 @@ package stack
 
 import "leetcode/src/utils"
 
-func calculate(s string) int {
+func calculate772(s string) int {
 	var stack []int
 	var num int
 	var sign byte = '+'
 	for i := 0; i < len(s); i++ {
 		if s[i] >= '0' && s[i] <= '9' {
 			num = num*10 + utils.NumByte2Int(s[i])
+		}
+		if s[i] == '(' {
+			// find the match ')' when cnt == 0
+			var cnt int
+			for j := i; j < len(s); j++ {
+				if s[j] == '(' {
+					cnt++
+					continue
+				}
+				if s[j] == ')' {
+					cnt--
+				}
+				if cnt == 0 {
+					// recursively calculate the expression between the '(' and ')'
+					num = calculate772(s[i+1 : j])
+					// let the i move to j, next loop i++, then get the next after ')'
+					i = j
+					break
+				}
+			}
 		}
 		if s[i] == '+' || s[i] == '-' || s[i] == '/' || s[i] == '*' || i == len(s)-1 {
 			switch sign {

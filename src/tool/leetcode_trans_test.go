@@ -8,47 +8,39 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func largestNumber(nums []int) string {
-	sort.Slice(nums, func(i, j int) bool {
-		var nums1, nums2 []int
-		num1, num2 := nums[i], nums[j]
-		for num1 != 0 || num2 != 0 {
-			if num1 > 0 {
-				nums1 = append(nums1, num1%10)
-			}
-			if num2 > 0 {
-				nums2 = append(nums2, num2%10)
-			}
-			num1 /= 10
-			num2 /= 10
+func calculate(s string) int {
+	stack := []int{0}
+	var num int
+	sign := '+'
+	for i := 0; i < len(s); i++ {
+		if s[i] == ' ' {
+			continue
 		}
-		idx1 := len(nums1) - 1
-		idx2 := len(nums2) - 1
-		for cnt := 0; cnt < utils.Lcm(len(nums1), len(nums2)); cnt++ {
-			if idx1 == 0 {
-				idx1 = len(nums1) - 1
-			}
-			if idx2 == 0 {
-				idx2 = len(nums2) - 1
-			}
-			num1, num2 = nums1[idx1], nums2[idx2]
-			idx1--
-			idx2--
-			if num1 == num2 {
-				continue
-			} else if num1 > num2 {
-				return true
-			} else {
-				return false
-			}
+		if s[i] >= '0' && s[i] <= '9' {
+			num = num*10 + utils.NumByte2Int(s[i])
+			continue
 		}
-		return true
-	})
-	var res strings.Builder
-	for _, num := range nums {
-		res.WriteString(strconv.Itoa(num))
+		switch sign {
+		case '+':
+			stack = append(stack, num)
+		case '-':
+			stack = append(stack, -num)
+		case '*':
+			pop := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+			stack = append(stack, pop*num)
+		case '/':
+			pop := stack[len(stack)-1]
+			stack = stack[:len(stack)-1]
+			stack = append(stack, pop/num)
+		}
+		num = 0
 	}
-	return res.String()
+	var res int
+	for i := 0; i < len(stack); i++ {
+		res += stack[i]
+	}
+	return res
 }
 
 `
@@ -115,6 +107,23 @@ func gcd(a, b int) int {
 		transCode += `
 func Abs(num int) int {
 	return int(math.Abs(float64(num)))
+}
+`
+	}
+
+	if strings.Contains(transCode, "utils.NumByte2Int") {
+		transCode = strings.ReplaceAll(transCode, "utils.NumByte2Int", "numByte2Int")
+		transCode += `
+func numByte2Int(b byte) int {
+	return int(b - '0')
+}
+`
+	}
+	if strings.Contains(transCode, "utils.Int2NumByte") {
+		transCode = strings.ReplaceAll(transCode, "utils.Int2NumByte", "int2NumByte")
+		transCode += `
+func Int2NumByte(i int) byte {
+	return byte(i + '0')
 }
 `
 	}

@@ -13,7 +13,7 @@ func TestInt2String(t *testing.T) {
 	fmt.Println(Int2String(123))
 }
 
-func TestSync(t *testing.T) {
+func TestSyncWaitGroup(t *testing.T) {
 	g := sync.WaitGroup{}
 	g.Add(10)
 	for i := 0; i < 10; i++ {

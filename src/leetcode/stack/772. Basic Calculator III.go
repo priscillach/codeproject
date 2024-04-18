@@ -22,7 +22,7 @@ func calculate772(s string) int {
 					cnt--
 				}
 				if cnt == 0 {
-					// recursively calculate the expression between the '(' and ')'
+					// recursively calculate the expression between the '(' and ')' i.e. i + 1 ~ j - 1
 					num = calculate772(s[i+1 : j])
 					// let the i move to j, next loop i++, then get the next after ')'
 					i = j

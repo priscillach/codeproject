@@ -1,5 +1,5 @@
 package stack
 
 func calculate(s string) int {
-	return 0
+	return 1
 }

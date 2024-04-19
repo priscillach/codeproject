@@ -5,14 +5,14 @@ import (
 	"math"
 )
 
-func deleteDuplicates(head *mylinkednode.ListNode) *mylinkednode.ListNode {
+func deleteDuplicates82(head *mylinkednode.ListNode) *mylinkednode.ListNode {
 	newHead := &mylinkednode.ListNode{
 		Next: head,
 		Val:  math.MinInt,
 	}
 	cur := newHead
 	for cur != nil {
-		if next, isDuplicate := detectDuplicates(cur.Next); isDuplicate {
+		if next, isDuplicate := deleteDuplicatesCore82(cur.Next); isDuplicate {
 			cur.Next = next
 			continue
 		}
@@ -21,7 +21,7 @@ func deleteDuplicates(head *mylinkednode.ListNode) *mylinkednode.ListNode {
 	return newHead.Next
 }
 
-func detectDuplicates(head *mylinkednode.ListNode) (*mylinkednode.ListNode, bool) {
+func deleteDuplicatesCore82(head *mylinkednode.ListNode) (*mylinkednode.ListNode, bool) {
 	if head == nil {
 		return nil, false
 	}

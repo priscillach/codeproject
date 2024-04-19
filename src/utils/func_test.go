@@ -87,3 +87,41 @@ func TestSyncUnlock2(t *testing.T) {
 	syncLock.AcquireSyncLock("key1")
 	syncLock.ReleaseSyncLock("key2")
 }
+
+func TestSyncLock2(t *testing.T) {
+	syncLock := NewSyncLockByeKey()
+	go func() {
+		syncLock.AcquireSyncLock("key1")
+		fmt.Println("Lock acquired for key1-1")
+		time.Sleep(time.Duration(2+rand.Intn(5)) * time.Second)
+		syncLock.ReleaseSyncLock("key1")
+		fmt.Println("Lock released for key1-1")
+	}()
+	go func() {
+		syncLock.AcquireSyncLock("key2")
+		fmt.Println("Lock acquired for key2-1")
+		time.Sleep(time.Duration(2+rand.Intn(5)) * time.Second)
+		syncLock.ReleaseSyncLock("key2")
+		fmt.Println("Lock released for key2-1")
+	}()
+
+	time.Sleep(100 * time.Millisecond)
+	syncLock.AcquireSyncLock("key1")
+	fmt.Println("Lock acquired for key1-2")
+	syncLock.AcquireSyncLock("key2")
+	fmt.Println("Lock acquired for key2-2")
+	time.Sleep(time.Duration(2+rand.Intn(5)) * time.Second)
+
+	syncLock.ReleaseSyncLock("key2")
+	fmt.Println("Lock released for key2-2")
+
+	syncLock.ReleaseSyncLock("key1")
+	fmt.Println("Lock released for key1-2")
+
+	syncLock.AcquireSyncLock("key1")
+	fmt.Println("Lock acquired for key1-3")
+	time.Sleep(time.Duration(2+rand.Intn(5)) * time.Second)
+
+	syncLock.ReleaseSyncLock("key1")
+	fmt.Println("Lock released for key1-3")
+}

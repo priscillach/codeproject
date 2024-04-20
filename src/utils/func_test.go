@@ -125,3 +125,9 @@ func TestSyncLock2(t *testing.T) {
 	syncLock.ReleaseSyncLock("key1")
 	fmt.Println("Lock released for key1-3")
 }
+
+func TestArrayFill(t *testing.T) {
+	b := []int{1, 2, 3}
+	FillSlice(b, -1)
+	fmt.Println(b)
+}

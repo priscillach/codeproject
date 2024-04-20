@@ -105,7 +105,7 @@ func gcd(a, b int) int {
 	if strings.Contains(transCode, "utils.Abs") {
 		transCode = strings.ReplaceAll(transCode, "utils.Abs", "abs")
 		transCode += `
-func Abs(num int) int {
+func abs(num int) int {
 	return int(math.Abs(float64(num)))
 }
 `
@@ -122,10 +122,21 @@ func numByte2Int(b byte) int {
 	if strings.Contains(transCode, "utils.Int2NumByte") {
 		transCode = strings.ReplaceAll(transCode, "utils.Int2NumByte", "int2NumByte")
 		transCode += `
-func Int2NumByte(i int) byte {
+func int2NumByte(i int) byte {
 	return byte(i + '0')
 }
 `
 	}
+	if strings.Contains(transCode, "utils.FillSlice") {
+		transCode = strings.ReplaceAll(transCode, "utils.FillSlice", "fillSlice")
+		transCode += `
+func fillSlice(nums []int, num int) {
+	for i := 0; i < len(nums); i++ {
+		nums[i] = num
+	}
+}
+`
+	}
+
 	fmt.Println(transCode)
 }

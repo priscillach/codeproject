@@ -14,6 +14,7 @@ func lengthOfLIS(nums []int) int {
 }
 
 // the difference from mybinaryindexedtree.BIT is ?
+
 type BIT struct {
 	tree []int
 }

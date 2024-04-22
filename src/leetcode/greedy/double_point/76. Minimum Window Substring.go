@@ -1,4 +1,4 @@
-package _map
+package double_point
 
 func minWindow(s string, t string) string {
 	cntDic := make([]int, 52)

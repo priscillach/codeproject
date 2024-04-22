@@ -9,10 +9,6 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	lengthOfLongestSubstring("sbacdafgs")
 }
 
-func TestMinWindow(t *testing.T) {
-	minWindow("ADOBECODEBANC", "ABC")
-}
-
 func TestLongestConsecutive(t *testing.T) {
 	assert.Equal(t, 9, longestConsecutive([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
 }

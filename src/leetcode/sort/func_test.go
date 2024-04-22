@@ -12,7 +12,7 @@ func TestBubbleSort(t *testing.T) {
 }
 
 func TestHeapSort(t *testing.T) {
-	nums := []int{5, 2, 1, 5, 4, 2, 3, 1}
+	nums := []int{0, 2, 1, 5, 4, 2, 3, 1}
 	HeapSort(nums)
 	fmt.Println(nums)
 }

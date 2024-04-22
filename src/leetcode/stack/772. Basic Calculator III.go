@@ -1,6 +1,8 @@
 package stack
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/stringhelper"
+)
 
 func calculate772(s string) int {
 	var stack []int
@@ -8,7 +10,7 @@ func calculate772(s string) int {
 	var sign byte = '+'
 	for i := 0; i < len(s); i++ {
 		if s[i] >= '0' && s[i] <= '9' {
-			num = num*10 + utils.NumByte2Int(s[i])
+			num = num*10 + stringhelper.NumByte2Int(s[i])
 		}
 		if s[i] == '(' {
 			// find the match ')' when cnt == 0

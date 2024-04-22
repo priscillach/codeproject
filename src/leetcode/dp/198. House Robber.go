@@ -1,6 +1,8 @@
 package dp
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func rob198(nums []int) int {
 	picked, unPicked := 0, 0
@@ -10,8 +12,8 @@ func rob198(nums []int) int {
 			continue
 		}
 		tmp := unPicked + nums[i]
-		unPicked = utils.Max(picked, unPicked)
+		unPicked = mathhelper.Max(picked, unPicked)
 		picked = tmp
 	}
-	return utils.Max(unPicked, picked)
+	return mathhelper.Max(unPicked, picked)
 }

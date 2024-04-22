@@ -2,7 +2,7 @@ package binary_tree
 
 import (
 	"leetcode/src/define/mytreenode"
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 )
 
 func isBalanced(root *mytreenode.TreeNode) bool {
@@ -18,8 +18,8 @@ func isBalancedCore(root *mytreenode.TreeNode) int {
 	if depthLeft == -1 || depthRight == -1 {
 		return -1
 	}
-	if utils.Abs(depthLeft-depthRight) > 1 {
+	if mathhelper.Abs(depthLeft-depthRight) > 1 {
 		return -1
 	}
-	return utils.Max(depthLeft, depthRight) + 1
+	return mathhelper.Max(depthLeft, depthRight) + 1
 }

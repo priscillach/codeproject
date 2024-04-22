@@ -1,6 +1,8 @@
 package greedy
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func longestCommonPrefix(strs []string) string {
 	first := strs[0]
@@ -15,7 +17,7 @@ func longestCommonPrefix(strs []string) string {
 
 func longestCommonPrefixCore(str1, str2 string) string {
 	var res []byte
-	for i := 0; i < utils.Min(len(str1), len(str2)); i++ {
+	for i := 0; i < mathhelper.Min(len(str1), len(str2)); i++ {
 		if str1[i] == str2[i] {
 			res = append(res, str1[i])
 			continue

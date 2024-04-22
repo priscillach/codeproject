@@ -1,18 +1,14 @@
-package utils
+package asynchelper
 
 import (
 	"fmt"
+	"leetcode/src/utils/timehelper"
 	"math/rand"
 	"sync"
 	"sync/atomic"
 	"testing"
 	"time"
 )
-
-func TestInt2String(t *testing.T) {
-	fmt.Println(Int2String(0))
-	fmt.Println(Int2String(123))
-}
 
 func TestSyncWaitGroup(t *testing.T) {
 	g := sync.WaitGroup{}
@@ -27,7 +23,7 @@ func TestSyncWaitGroup(t *testing.T) {
 			fmt.Printf("gorotine: %v, time: %v\n start", goroutineNum, startTime.Second())
 			time.Sleep(time.Duration(2+rand.Intn(5)) * time.Second)
 			endTime := time.Now()
-			fmt.Printf("gorotine: %v, time: %v end, cost: %v\n", goroutineNum, endTime.Second(), FormatDuration(endTime.Sub(startTime)))
+			fmt.Printf("gorotine: %v, time: %v end, cost: %v\n", goroutineNum, endTime.Second(), timehelper.FormatDuration(endTime.Sub(startTime)))
 		}()
 	}
 	g.Wait()
@@ -124,10 +120,4 @@ func TestSyncLock2(t *testing.T) {
 
 	syncLock.ReleaseSyncLock("key1")
 	fmt.Println("Lock released for key1-3")
-}
-
-func TestArrayFill(t *testing.T) {
-	b := []int{1, 2, 3}
-	FillSlice(b, -1)
-	fmt.Println(b)
 }

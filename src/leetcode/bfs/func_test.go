@@ -3,11 +3,11 @@ package bfs
 import (
 	"github.com/stretchr/testify/assert"
 	"leetcode/src/define/mytreenode"
-	"leetcode/src/utils"
+	"leetcode/src/utils/arrayhelper"
 	"math"
 	"testing"
 )
 
 func TestWidthOfBinaryTree(t *testing.T) {
-	assert.Equal(t, widthOfBinaryTree(mytreenode.BuildBinaryTreeV2(utils.NumsSlice2NumsPtrSlice([]int{1, 3, 2, 5, 3, math.MinInt, 9}))), 4)
+	assert.Equal(t, widthOfBinaryTree(mytreenode.BuildBinaryTreeV2(arrayhelper.NumsSlice2NumsPtrSlice([]int{1, 3, 2, 5, 3, math.MinInt, 9}))), 4)
 }

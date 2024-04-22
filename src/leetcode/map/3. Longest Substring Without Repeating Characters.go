@@ -1,6 +1,8 @@
 package _map
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 const LEN = 256
 
@@ -13,10 +15,10 @@ func lengthOfLongestSubstring(s string) int {
 	maxLen := 0
 	for i := 0; i < len(s); i++ {
 		if lastIndex[int(s[i])] != -1 {
-			p = utils.Max(p, lastIndex[int(s[i])])
+			p = mathhelper.Max(p, lastIndex[int(s[i])])
 		}
 		lastIndex[int(s[i])] = i
-		maxLen = utils.Max(maxLen, i-p)
+		maxLen = mathhelper.Max(maxLen, i-p)
 	}
 	return maxLen
 }

@@ -1,4 +1,4 @@
-package utils
+package stringhelper
 
 func NumByte2Int(b byte) int {
 	return int(b - '0')

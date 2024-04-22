@@ -1,6 +1,8 @@
 package stack
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func longestValidParentheses(s string) int {
 	var stack []int
@@ -11,7 +13,7 @@ func longestValidParentheses(s string) int {
 			stack = stack[:len(stack)-2]
 		}
 		if len(stack) > 0 {
-			maxLen = utils.Max(maxLen, i-stack[len(stack)-1])
+			maxLen = mathhelper.Max(maxLen, i-stack[len(stack)-1])
 		} else {
 			maxLen = i + 1
 		}

@@ -1,7 +1,7 @@
 package dp
 
 import (
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 	"math"
 )
 
@@ -16,13 +16,13 @@ func maxProduct(nums []int) int {
 			dp[i][0] = nums[i]
 			dp[i][1] = nums[i]
 		} else if nums[i] > 0 {
-			dp[i][0] = utils.Min(nums[i]*dp[i-1][0], nums[i])
-			dp[i][1] = utils.Max(nums[i]*dp[i-1][1], nums[i])
+			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][0], nums[i])
+			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][1], nums[i])
 		} else if nums[i] < 0 {
-			dp[i][0] = utils.Min(nums[i]*dp[i-1][1], nums[i])
-			dp[i][1] = utils.Max(nums[i]*dp[i-1][0], nums[i])
+			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][1], nums[i])
+			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][0], nums[i])
 		}
-		res = utils.Max(res, dp[i][1])
+		res = mathhelper.Max(res, dp[i][1])
 	}
 	return res
 }

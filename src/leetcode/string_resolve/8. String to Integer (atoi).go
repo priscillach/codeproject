@@ -1,6 +1,8 @@
 package string_resolve
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/stringhelper"
+)
 
 func myAtoi(s string) int {
 	s = trim(s)
@@ -21,7 +23,7 @@ func myAtoi(s string) int {
 		if s[i] == '0' && res == 0 {
 			continue
 		}
-		cur := utils.NumByte2Int(s[i])
+		cur := stringhelper.NumByte2Int(s[i])
 		if sign == 1 && cur > 1<<31-1-10*res {
 			return 1<<31 - 1
 		}

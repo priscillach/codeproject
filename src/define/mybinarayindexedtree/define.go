@@ -2,7 +2,7 @@ package mybinarayindexedtree
 
 import (
 	"fmt"
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 )
 
 type BIT struct {
@@ -34,7 +34,7 @@ func (b *BIT) Add(index, delta int) {
 		}
 		b.arr[index-1] += delta
 	}
-	for i := index; i < len(b.tree); i += utils.LowBit(i) {
+	for i := index; i < len(b.tree); i += mathhelper.LowBit(i) {
 		b.tree[i] += delta
 	}
 }
@@ -52,7 +52,7 @@ func (b *BIT) Update(index, val int) {
 func (b *BIT) GetPrefixSum(index int) int {
 	sum := 0
 	// the next composition range [x - lowbit(i) + 1 : x] of tree[x] is tree[x - lowbit(x)] for sum of arr[1 : x]
-	for i := index; i > 0; i -= utils.LowBit(i) {
+	for i := index; i > 0; i -= mathhelper.LowBit(i) {
 		sum += b.tree[i]
 	}
 	return sum

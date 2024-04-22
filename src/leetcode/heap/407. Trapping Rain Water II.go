@@ -2,7 +2,7 @@ package _heap
 
 import (
 	"container/heap"
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 )
 
 func trapRainWater(heightMap [][]int) int {
@@ -58,11 +58,11 @@ func trapRainWater(heightMap [][]int) int {
 				continue
 			}
 			visited[nextR][nextC] = true
-			res += utils.Max(0, lowestBucket.Height-heightMap[nextR][nextC])
+			res += mathhelper.Max(0, lowestBucket.Height-heightMap[nextR][nextC])
 			heap.Push(&buckets, &Bucket{
 				Row:    nextR,
 				Col:    nextC,
-				Height: utils.Max(heightMap[nextR][nextC], lowestBucket.Height),
+				Height: mathhelper.Max(heightMap[nextR][nextC], lowestBucket.Height),
 			})
 		}
 	}

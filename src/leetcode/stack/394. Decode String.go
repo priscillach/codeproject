@@ -1,7 +1,7 @@
 package stack
 
 import (
-	"leetcode/src/utils"
+	"leetcode/src/utils/stringhelper"
 	"strings"
 )
 
@@ -13,7 +13,7 @@ func decodeString(s string) string {
 		if s[i] <= 'z' && s[i] >= 'a' {
 			strStack[len(strStack)-1] += string(s[i])
 		} else if s[i] != '[' && s[i] != ']' {
-			num = num*10 + utils.NumByte2Int(s[i])
+			num = num*10 + stringhelper.NumByte2Int(s[i])
 		} else if s[i] == '[' {
 			numStack = append(numStack, num)
 			// add a new empty str into stack as encountering a new sub "[...]"

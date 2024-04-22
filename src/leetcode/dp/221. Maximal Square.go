@@ -1,7 +1,7 @@
 package dp
 
 import (
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 )
 
 func maximalSquare(matrix [][]byte) int {
@@ -16,7 +16,7 @@ func maximalSquare(matrix [][]byte) int {
 				if i == 0 || j == 0 {
 					dp[i][j] = 1
 				} else {
-					dp[i][j] = utils.Min(dp[i][j-1], dp[i-1][j], dp[i-1][j-1]) + 1
+					dp[i][j] = mathhelper.Min(dp[i][j-1], dp[i-1][j], dp[i-1][j-1]) + 1
 				}
 				if dp[i][j]*dp[i][j] > maxSize {
 					maxSize = dp[i][j] * dp[i][j]

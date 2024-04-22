@@ -1,6 +1,8 @@
 package dp
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func minPathSum(grid [][]int) int {
 	dp := make([][]int, len(grid))
@@ -16,7 +18,7 @@ func minPathSum(grid [][]int) int {
 			} else if j == 0 {
 				dp[i][j] = grid[i][j] + dp[i-1][j]
 			} else {
-				dp[i][j] = utils.Min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
+				dp[i][j] = mathhelper.Min(dp[i-1][j], dp[i][j-1]) + grid[i][j]
 			}
 		}
 	}

@@ -1,6 +1,8 @@
 package dp
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func coinChange(coins []int, amount int) int {
 	dp := make([]int, amount+1)
@@ -14,7 +16,7 @@ func coinChange(coins []int, amount int) int {
 			} else if dp[j] == -1 {
 				dp[j] = dp[j-coins[i]] + 1
 			} else {
-				dp[j] = utils.Min(dp[j], dp[j-coins[i]]+1)
+				dp[j] = mathhelper.Min(dp[j], dp[j-coins[i]]+1)
 			}
 		}
 	}

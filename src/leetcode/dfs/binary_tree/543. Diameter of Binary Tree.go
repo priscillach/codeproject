@@ -2,7 +2,7 @@ package binary_tree
 
 import (
 	"leetcode/src/define/mytreenode"
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 )
 
 var diameterOfBinaryTreeMax int
@@ -19,6 +19,6 @@ func diameterOfBinaryTreeCore(root *mytreenode.TreeNode) int {
 	}
 	depthLeft := diameterOfBinaryTreeCore(root.Left)
 	depthRight := diameterOfBinaryTreeCore(root.Right)
-	diameterOfBinaryTreeMax = utils.Max(diameterOfBinaryTreeMax, depthLeft+depthRight)
-	return utils.Max(depthLeft, depthRight) + 1
+	diameterOfBinaryTreeMax = mathhelper.Max(diameterOfBinaryTreeMax, depthLeft+depthRight)
+	return mathhelper.Max(depthLeft, depthRight) + 1
 }

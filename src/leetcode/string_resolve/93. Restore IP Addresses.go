@@ -1,7 +1,7 @@
 package string_resolve
 
 import (
-	"leetcode/src/utils"
+	"leetcode/src/utils/mathhelper"
 	"strconv"
 	"strings"
 )
@@ -26,7 +26,7 @@ func dfsRestoreIpAddresses(s string, parts []string) {
 		}
 		return
 	}
-	for i := 1; i <= utils.Min(len(s), 3); i++ {
+	for i := 1; i <= mathhelper.Min(len(s), 3); i++ {
 		if isValid(s[:i]) {
 			parts = append(parts, s[:i])
 			dfsRestoreIpAddresses(s[i:], parts)

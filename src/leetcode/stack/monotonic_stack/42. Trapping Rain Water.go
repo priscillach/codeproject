@@ -1,6 +1,8 @@
 package monotonic_stack
 
-import "leetcode/src/utils"
+import (
+	"leetcode/src/utils/mathhelper"
+)
 
 func trap(height []int) (ans int) {
 	n := len(height)
@@ -11,17 +13,17 @@ func trap(height []int) (ans int) {
 	leftMax := make([]int, n)
 	leftMax[0] = height[0]
 	for i := 1; i < n; i++ {
-		leftMax[i] = utils.Max(leftMax[i-1], height[i])
+		leftMax[i] = mathhelper.Max(leftMax[i-1], height[i])
 	}
 
 	rightMax := make([]int, n)
 	rightMax[n-1] = height[n-1]
 	for i := n - 2; i >= 0; i-- {
-		rightMax[i] = utils.Max(rightMax[i+1], height[i])
+		rightMax[i] = mathhelper.Max(rightMax[i+1], height[i])
 	}
 
 	for i, h := range height {
-		ans += utils.Min(leftMax[i], rightMax[i]) - h
+		ans += mathhelper.Min(leftMax[i], rightMax[i]) - h
 	}
 	return
 }
@@ -37,7 +39,7 @@ func trapV2(height []int) (ans int) {
 			}
 			left := stack[len(stack)-1]
 			curWidth := i - left - 1
-			curHeight := utils.Min(height[left], h) - height[top]
+			curHeight := mathhelper.Min(height[left], h) - height[top]
 			ans += curWidth * curHeight
 		}
 		stack = append(stack, i)

@@ -1,4 +1,4 @@
-package double_point
+package two_pointer
 
 import "sort"
 

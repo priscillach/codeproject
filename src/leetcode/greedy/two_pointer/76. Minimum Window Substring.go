@@ -1,4 +1,4 @@
-package double_point
+package two_pointer
 
 func minWindow(s string, t string) string {
 	cntDic := make([]int, 52)

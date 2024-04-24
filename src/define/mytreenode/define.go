@@ -2,6 +2,9 @@ package mytreenode
 
 import (
 	"errors"
+	"fmt"
+	"strconv"
+	"strings"
 )
 
 type TreeNode struct {
@@ -46,6 +49,7 @@ func BuildBinaryTreeV2(nums []*int) *TreeNode {
 
 // BuildBinaryTree [-10,9,20,null,null,15,7]
 // for every layer the nil leaf should be filled
+// Deprecated
 func BuildBinaryTree(nums []*int) (*TreeNode, error) {
 	if len(nums) == 0 || nums[0] == nil {
 		return nil, nil
@@ -75,4 +79,64 @@ func BuildBinaryTree(nums []*int) (*TreeNode, error) {
 		}
 	}
 	return treeNodes[0], nil
+}
+
+// BinaryTree2IntPointerArr tree -> arr rule: https://support.leetcode.com/hc/en-us/articles/360011883654-What-does-1-null-2-3-mean-in-binary-tree-representation
+func BinaryTree2IntPointerArr(root *TreeNode) []*int {
+	var queue []*TreeNode
+	var res []*int
+	queue = append(queue, root)
+	for len(queue) > 0 {
+		size := len(queue)
+		for i := 0; i < size; i++ {
+			pop := queue[0]
+			queue = queue[1:]
+			if pop != nil {
+				res = append(res, &pop.Val)
+				queue = append(queue, pop.Left)
+				queue = append(queue, pop.Right)
+			} else {
+				res = append(res, nil)
+			}
+		}
+	}
+	for len(res) > 0 && res[len(res)-1] == nil {
+		res = res[:len(res)-1]
+	}
+	return res
+}
+
+func BuildBinaryTreeFromLeetCodeCase(str string) *TreeNode {
+	str = strings.TrimLeft(str, "[")
+	str = strings.TrimRight(str, "]")
+	if str == "" {
+		return nil
+	}
+	strs := strings.Split(str, ",")
+	var nums []*int
+	for i := 0; i < len(strs); i++ {
+		if strs[i] == LeetCodeNilTreeNode {
+			nums = append(nums, nil)
+		} else {
+			num, err := strconv.Atoi(strs[i])
+			if err != nil {
+				panic(fmt.Sprintf("Split err: %v", err))
+			}
+			nums = append(nums, &num)
+		}
+	}
+	return BuildBinaryTreeV2(nums)
+}
+
+func BinaryTree2LeetCodeCase(root *TreeNode) string {
+	nums := BinaryTree2IntPointerArr(root)
+	var res []string
+	for i := 0; i < len(nums); i++ {
+		if nums[i] == nil {
+			res = append(res, LeetCodeNilTreeNode)
+		} else {
+			res = append(res, strconv.Itoa(*nums[i]))
+		}
+	}
+	return "[" + strings.Join(res, ",") + "]"
 }

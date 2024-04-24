@@ -14,7 +14,7 @@ func TestRestoreIpAddresses(t *testing.T) {
 }
 
 func TestMyAtoi(t *testing.T) {
-	myAtoi("4193 with words")
+	MyAtoi("4193 with words")
 	fmt.Println('0', '9')
 }
 

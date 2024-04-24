@@ -1,5 +1,11 @@
 package stringhelper
 
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
+
 func NumByte2Int(b byte) int {
 	return int(b - '0')
 }
@@ -18,4 +24,32 @@ func Int2String(num int) string {
 		num = num / 10
 	}
 	return string(res)
+}
+
+func IntArr2String(nums []int) string {
+	res := ""
+	for i := 0; i < len(nums); i++ {
+		if i == len(nums)-1 {
+			res += strconv.Itoa(nums[i])
+			continue
+		}
+		res += strconv.Itoa(nums[i]) + ","
+	}
+	return res
+}
+
+func String2IntArr(str string) []int {
+	var nums []int
+	if str == "" {
+		return nums
+	}
+	strs := strings.Split(str, ",")
+	for i := 0; i < len(strs); i++ {
+		num, err := strconv.Atoi(strs[i])
+		if err != nil {
+			panic(fmt.Sprintf("String2IntArr err: %v", err))
+		}
+		nums = append(nums, num)
+	}
+	return nums
 }

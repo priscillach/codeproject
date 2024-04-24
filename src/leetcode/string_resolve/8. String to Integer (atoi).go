@@ -4,7 +4,7 @@ import (
 	"leetcode/src/utils/stringhelper"
 )
 
-func myAtoi(s string) int {
+func MyAtoi(s string) int {
 	s = trim(s)
 	sign := getSign(s)
 	if sign == -1 {

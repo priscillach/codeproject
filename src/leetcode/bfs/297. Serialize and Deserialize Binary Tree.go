@@ -1,7 +1,8 @@
-package binary_tree
+package bfs
 
 import (
 	"leetcode/src/define/mytreenode"
+	"leetcode/src/leetcode/dfs/binary_tree"
 	"leetcode/src/leetcode/string_resolve"
 	"leetcode/src/utils/stringhelper"
 	"strconv"
@@ -16,7 +17,7 @@ func Constructor() Codec {
 }
 
 // Serializes a tree to a single string.
-func (this *Codec) serializeOnlyForUniqueValue(root *mytreenode.TreeNode) string {
+func (my *Codec) serializeOnlyForUniqueValue(root *mytreenode.TreeNode) string {
 	cur := root
 	var preOrder297 []int
 	var inOrder297 []int
@@ -36,15 +37,15 @@ func (this *Codec) serializeOnlyForUniqueValue(root *mytreenode.TreeNode) string
 }
 
 // Deserializes your encoded data to tree.
-func (this *Codec) deserializeOnlyForUniqueValue(data string) *mytreenode.TreeNode {
+func (my *Codec) deserializeOnlyForUniqueValue(data string) *mytreenode.TreeNode {
 	arrs := strings.Split(data, "|")
 	if len(arrs) != 2 {
 		panic("err data to be deserialized")
 	}
-	return buildTree105(stringhelper.String2IntArr(arrs[0]), stringhelper.String2IntArr(arrs[1]))
+	return binary_tree.BuildTree105(stringhelper.String2IntArr(arrs[0]), stringhelper.String2IntArr(arrs[1]))
 }
 
-func (this *Codec) serialize(root *mytreenode.TreeNode) string {
+func (my *Codec) serialize(root *mytreenode.TreeNode) string {
 	var queue []*mytreenode.TreeNode
 	var res []string
 	queue = append(queue, root)
@@ -66,7 +67,7 @@ func (this *Codec) serialize(root *mytreenode.TreeNode) string {
 }
 
 // Deserializes your encoded data to tree.
-func (this *Codec) deserialize(data string) *mytreenode.TreeNode {
+func (my *Codec) deserialize(data string) *mytreenode.TreeNode {
 	if data == "" || data == "-" {
 		return nil
 	}

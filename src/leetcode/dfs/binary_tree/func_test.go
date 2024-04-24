@@ -42,54 +42,9 @@ func TestHasPathSum(t *testing.T) {
 	hasPathSum(root, 22)
 }
 
-func TestSerializeBinaryTree(t *testing.T) {
-	root := mytreenode.BuildBinaryTreeV2(arrayhelper.NumsSlice2NumsPtrSlice([]int{1, 2, 3, math.MinInt, math.MinInt, 4, 5}))
-	ser := Constructor()
-	deser := Constructor()
-	data := ser.serializeOnlyForUniqueValue(root)
-	ans := deser.deserializeOnlyForUniqueValue(data)
-	assert.Equal(t, ans, root)
-
-	root = mytreenode.BuildBinaryTreeV2(arrayhelper.NumsSlice2NumsPtrSlice([]int{1, 2, 3, math.MinInt, math.MinInt, 4, 5}))
-	ser = Constructor()
-	deser = Constructor()
-	data = ser.serialize(root)
-	ans = deser.deserialize(data)
-	assert.Equal(t, ans, root)
-
-	root = mytreenode.BuildBinaryTreeV2(arrayhelper.NumsSlice2NumsPtrSlice([]int{4, -7, -3, math.MinInt, math.MinInt, -9, -3, 9, -7, -4, math.MinInt, 6, math.MinInt, -6, -6, math.MinInt, math.MinInt, 0, 6, 5, math.MinInt, 9, math.MinInt, math.MinInt, -1, -4, math.MinInt, math.MinInt, math.MinInt, -2}))
-	ser = Constructor()
-	deser = Constructor()
-	data = ser.serialize(root)
-	ans = deser.deserialize(data)
-	assert.Equal(t, ans, root)
-
-	root = mytreenode.BuildBinaryTreeFromLeetCodeCase("[]")
-	ser = Constructor()
-	deser = Constructor()
-	data = ser.serialize(root)
-	ans = deser.deserialize(data)
-	assert.Equal(t, ans, root)
-
-	root = mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,3,null,null,4,5]")
-	ser = Constructor()
-	deser = Constructor()
-	data = ser.serialize(root)
-	ans = deser.deserialize(data)
-	assert.Equal(t, ans, root)
-
-	root = mytreenode.BuildBinaryTreeFromLeetCodeCase("[4,-7,-3,null,null,-9,-3,9,-7,-4,null,6,null,-6,-6,null,null,0,6,5,null,9,null,null,-1,-4,null,null,null,-2]")
-	ser = Constructor()
-	deser = Constructor()
-	data = ser.serialize(root)
-	ans = deser.deserialize(data)
-	assert.Equal(t, ans, root)
-
-}
-
 func TestBuildTree105(t *testing.T) {
 	assert.Panics(t, func() {
-		buildTree105([]int{4, -7, -3, -9, 9, 6, 0, -1, 6, -4, -7, -6, 5, -6, 9, -2, -3, -4},
+		BuildTree105([]int{4, -7, -3, -9, 9, 6, 0, -1, 6, -4, -7, -6, 5, -6, 9, -2, -3, -4},
 			[]int{-7, 4, 0, -1, 6, -4, 6, 9, -9, 5, -6, -7, -2, 9, -6, -3, -4, -3})
 	})
 }

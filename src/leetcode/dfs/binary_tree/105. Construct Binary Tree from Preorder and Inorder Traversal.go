@@ -15,7 +15,7 @@ var idxMap105 map[int]int
 var preOrder105, inOrder105 []int
 var firstPos int
 
-func buildTree105(preorder []int, inorder []int) *mytreenode.TreeNode {
+func BuildTree105(preorder []int, inorder []int) *mytreenode.TreeNode {
 	idxMap105 = make(map[int]int)
 	for idx, val := range inorder {
 		idxMap105[val] = idx

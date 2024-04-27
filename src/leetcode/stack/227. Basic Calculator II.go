@@ -4,7 +4,7 @@ import (
 	"leetcode/src/utils/stringhelper"
 )
 
-func calculate(s string) int {
+func calculate227(s string) int {
 	var stack []int
 	var num int
 	var sign byte = '+'

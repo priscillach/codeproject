@@ -8,7 +8,7 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func calculate772(s string) int {
+func calculate(s string) int {
 	var stack []int
 	var num int
 	var sign byte = '+'
@@ -36,21 +36,12 @@ func calculate772(s string) int {
 				}
 			}
 		}
-		if s[i] == '+' || s[i] == '-' || s[i] == '/' || s[i] == '*' || i == len(s)-1 {
+		if s[i] == '+' || s[i] == '-' || i == len(s)-1 {
 			switch sign {
 			case '+':
 				stack = append(stack, num)
 			case '-':
 				stack = append(stack, -num)
-			case '*':
-				pop := stack[len(stack)-1]
-				stack = stack[:len(stack)-1]
-				stack = append(stack, pop*num)
-			case '/':
-				pop := stack[len(stack)-1]
-				stack = stack[:len(stack)-1]
-				stack = append(stack, pop/num)
-
 			}
 			sign = s[i]
 			num = 0

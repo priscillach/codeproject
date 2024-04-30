@@ -40,8 +40,38 @@ func findOrderCore(edges [][]int, visited []int, numCourses int, course int) ([]
 	return res, true
 }
 
-// BFS todo
+// in-degree Kahn algorithm
 func findOrderV2(numCourses int, prerequisites [][]int) []int {
-	var res []int
-	return res
+	//build the edges
+	edges := make([][]int, numCourses)
+	inDegree := make([]int, numCourses)
+	for _, v := range prerequisites {
+		edges[v[1]] = append(edges[v[1]], v[0])
+		inDegree[v[0]]++
+	}
+
+	var frontier []int
+	for i, v := range inDegree {
+		if v == 0 {
+			frontier = append(frontier, i)
+		}
+	}
+
+	var result []int
+	for len(frontier) > 0 {
+		cur := frontier[0]
+		frontier = frontier[1:]
+		result = append(result, cur)
+		for _, v := range edges[cur] {
+			inDegree[v]--
+			if inDegree[v] == 0 {
+				frontier = append(frontier, v)
+			}
+		}
+	}
+
+	if len(result) == numCourses {
+		return result
+	}
+	return []int{}
 }

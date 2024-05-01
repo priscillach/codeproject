@@ -17,7 +17,7 @@ func scheduleCourse(courses [][]int) int {
 		heap.Push(h, course[0])
 		curDay += course[0]
 		if curDay > course[1] {
-			// remove a course cost time more than cur course, and the last day extends, which make the courses in heap must meet the last day
+			// remove a course cost time more than cur course, the cur day decreases and the last day extends, which make the courses in heap must meet the last day
 			curDay -= heap.Pop(h).(int)
 		}
 	}

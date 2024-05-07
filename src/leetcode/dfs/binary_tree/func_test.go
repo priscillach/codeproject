@@ -48,3 +48,13 @@ func TestBuildTree105(t *testing.T) {
 			[]int{-7, 4, 0, -1, 6, -4, 6, 9, -9, 5, -6, -7, -2, 9, -6, -3, -4, -3})
 	})
 }
+
+func TestTreeToDoublyList(t *testing.T) {
+	node := treeToDoublyList(mytreenode.BuildBinaryTreeFromLeetCodeCase("[4,2,5,1,3]"))
+	assert.Equal(t, 1, node.Val)
+	assert.Equal(t, 5, node.Left.Val)
+
+	node = treeToDoublyList(mytreenode.BuildBinaryTreeFromLeetCodeCase("[7,3,10,2,5,8,11,1,null,4,6,null,9]"))
+	assert.Equal(t, 1, node.Val)
+	assert.Equal(t, 11, node.Left.Val)
+}

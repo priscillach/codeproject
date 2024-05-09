@@ -7,3 +7,8 @@ func TestRotate(t *testing.T) {
 		{1, 2, 3}, {4, 5, 6}, {7, 8, 9},
 	})
 }
+
+func TestFindDiagonalOrder(t *testing.T) {
+	findDiagonalOrder([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
+	findDiagonalOrder([][]int{{6, 9, 7}})
+}

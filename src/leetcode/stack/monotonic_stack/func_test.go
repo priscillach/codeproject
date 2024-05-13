@@ -2,6 +2,7 @@ package monotonic_stack
 
 import (
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
@@ -12,4 +13,8 @@ func TestMaxProfit(t *testing.T) {
 
 func TestTrap(t *testing.T) {
 	trapV2([]int{0, 2, 0, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1})
+}
+
+func TestRemoveKdigits(t *testing.T) {
+	assert.Equal(t, "11", removeKdigits("112", 1))
 }

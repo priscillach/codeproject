@@ -8,16 +8,22 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func maxArea(height []int) int {
-	left, right := 0, len(height) - 1
-	var res int
-	for left < right {
-		res = mathhelper.Max(res, (right - left) * mathhelper.Min(height[left], height[right])) 
-		if height[left] < height[right] {
-			left++
-		} else {
-			right--
+func removeKdigits(num string, k int) string {
+	var stack []int
+	for i := 0; i < len(num); i++ {
+		digit := stringhelper.NumByte2Int(num[i])
+		for len(stack) > 0 && k > 0 && stack[len(stack) - 1] > digit {
+			stack = stack[:len(stack)-1]
+			k--
 		}
+		stack = append(stack, digit)
+	}
+	var res string
+	for len(stack) > 1 && stack[0] == 0{
+		stack = stack[1:]
+	}
+	for i := 0; i < len(stack); i++ {
+		res += strconv.Itoa(stack[i])
 	}
 	return res
 }

@@ -8,26 +8,42 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func removeKdigits(num string, k int) string {
-	var stack []int
-	for i := 0; i < len(num); i++ {
-		digit := stringhelper.NumByte2Int(num[i])
-		for len(stack) > 0 && k > 0 && stack[len(stack) - 1] > digit {
-			stack = stack[:len(stack)-1]
-			k--
-		}
-		stack = append(stack, digit)
-	}
-	var res string
-	for len(stack) > 1 && stack[0] == 0{
-		stack = stack[1:]
-	}
-	for i := 0; i < len(stack); i++ {
-		res += strconv.Itoa(stack[i])
-	}
-	return res
-}
+func isCompleteTree(root *mytreenode.TreeNode) bool {
+	var queue []*mytreenode.TreeNode
+	var isLastSecLayer bool
+	queue = append(queue, root)
+	for len(queue) > 0 {
+		size := len(queue)
+		var hasGap bool
+		for i := 0; i < size; i++ {
+			first := queue[0]
+			queue = queue[1:]
+			if first.Left == nil && first.Right != nil {
+				return false
+			} else if first.Left == nil && first.Right == nil {
+				isLastSecLayer = true
+				hasGap = true
+			} else if first.Left != nil && first.Right != nil {
+				if hasGap || isLastSecLayer {
+					return false
+				}
+				queue = append(queue, first.Left)
+				queue = append(queue, first.Right)
+			} else {
+				if isLastSecLayer {
+					return false
+				}
+				isLastSecLayer = true
+				if hasGap {
+					return false
+				}
+				queue = append(queue, first.Left)
+			}
 
+		}
+	}
+	return true
+}
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
 	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")

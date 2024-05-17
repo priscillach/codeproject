@@ -55,3 +55,7 @@ func TestSerializeBinaryTree(t *testing.T) {
 	ans = deser.deserialize(data)
 	assert.Equal(t, ans, root)
 }
+
+func TestIsCompleteTree(t *testing.T) {
+	assert.Equal(t, true, isCompleteTree(mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,3,4,5,6]")))
+}

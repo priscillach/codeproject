@@ -8,42 +8,16 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func isCompleteTree(root *mytreenode.TreeNode) bool {
-	var queue []*mytreenode.TreeNode
-	var isLastSecLayer bool
-	queue = append(queue, root)
-	for len(queue) > 0 {
-		size := len(queue)
-		var hasGap bool
-		for i := 0; i < size; i++ {
-			first := queue[0]
-			queue = queue[1:]
-			if first.Left == nil && first.Right != nil {
-				return false
-			} else if first.Left == nil && first.Right == nil {
-				isLastSecLayer = true
-				hasGap = true
-			} else if first.Left != nil && first.Right != nil {
-				if hasGap || isLastSecLayer {
-					return false
-				}
-				queue = append(queue, first.Left)
-				queue = append(queue, first.Right)
-			} else {
-				if isLastSecLayer {
-					return false
-				}
-				isLastSecLayer = true
-				if hasGap {
-					return false
-				}
-				queue = append(queue, first.Left)
-			}
-
-		}
+func canJump(nums []int) bool {
+	curMaxPos := 0
+	curPos := 0
+	for curPos < curMaxPos && curPos < len(nums)-1 {
+		curMaxPos = mathhelper.Max(curMaxPos, curPos+nums[curPos])
+		curPos++
 	}
-	return true
+	return curPos == len(nums)-1
 }
+
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
 	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")

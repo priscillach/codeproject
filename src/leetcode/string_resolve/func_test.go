@@ -25,4 +25,7 @@ func TestCompareVersion(t *testing.T) {
 func TestMultiply(t *testing.T) {
 	Multiply("123", "456")
 	Multiply("9133", "0")
+
+	MultiplyV2("9133", "0")
+	MultiplyV2("123", "456")
 }

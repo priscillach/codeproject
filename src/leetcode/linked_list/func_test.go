@@ -36,7 +36,8 @@ func TestReorderList(t *testing.T) {
 }
 
 func TestDeleteDuplicates(t *testing.T) {
-	deleteDuplicates(mylinkednode.BuildLinkedList([]int{1, 1}))
+	deleteDuplicates82(mylinkednode.BuildLinkedList([]int{1, 1}))
+	deleteDuplicates83(mylinkednode.BuildLinkedList([]int{1, 1}))
 }
 
 func TestSortList(t *testing.T) {
@@ -45,4 +46,12 @@ func TestSortList(t *testing.T) {
 
 func TestIsPalindrome(t *testing.T) {
 	assert.Equal(t, isPalindrome(mylinkednode.BuildLinkedList([]int{1, 0, 1})), true)
+}
+
+func TestSortOddAscEvenDescList(t *testing.T) {
+	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5, 6, 7, 8}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 8, 3, 6, 5, 4, 7, 2})))
+	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 2})))
+	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1})))
+	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2, 3, 4}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 4, 3, 2})))
+	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2, 3}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 2, 3})))
 }

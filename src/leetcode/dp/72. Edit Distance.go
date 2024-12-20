@@ -16,6 +16,7 @@ func minDistance(word1 string, word2 string) int {
 	for j := 1; j <= len2; j++ {
 		distance[0][j] = j
 	}
+
 	for i := 1; i <= len1; i++ {
 		for j := 1; j <= len2; j++ {
 			minD := mathhelper.Min(distance[i][j-1]+1, distance[i-1][j]+1)

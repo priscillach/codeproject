@@ -2,6 +2,7 @@ package bfs
 
 import "leetcode/src/define/mytreenode"
 
+// finish times: 2
 func levelOrder(root *mytreenode.TreeNode) [][]int {
 	var res [][]int
 	var queue []*mytreenode.TreeNode

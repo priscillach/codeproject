@@ -106,6 +106,7 @@ func BinaryTree2IntPointerArr(root *TreeNode) []*int {
 	return res
 }
 
+// import
 func BuildBinaryTreeFromLeetCodeCase(str string) *TreeNode {
 	str = strings.TrimLeft(str, "[")
 	str = strings.TrimRight(str, "]")
@@ -128,6 +129,7 @@ func BuildBinaryTreeFromLeetCodeCase(str string) *TreeNode {
 	return BuildBinaryTreeV2(nums)
 }
 
+// import
 func BinaryTree2LeetCodeCase(root *TreeNode) string {
 	nums := BinaryTree2IntPointerArr(root)
 	var res []string

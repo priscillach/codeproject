@@ -8,14 +8,18 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func canJump(nums []int) bool {
-	curMaxPos := 0
-	curPos := 0
-	for curPos < curMaxPos && curPos < len(nums)-1 {
-		curMaxPos = mathhelper.Max(curMaxPos, curPos+nums[curPos])
-		curPos++
+func trainingPlan(head *mylinkednode.ListNode, cnt int) *mylinkednode.ListNode {
+	first := head
+	for i := 0; i < cnt-1; i++ {
+		first = first.Next
 	}
-	return curPos == len(nums)-1
+	second := head
+	for first != nil && first.Next != nil {
+		first = first.Next
+		second = second.Next
+	}
+	second.Next = nil
+	return second
 }
 
 `

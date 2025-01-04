@@ -55,3 +55,8 @@ func TestSortOddAscEvenDescList(t *testing.T) {
 	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2, 3, 4}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 4, 3, 2})))
 	assert.Equal(t, mylinkednode.BuildLinkedList([]int{1, 2, 3}), sortOddAscEvenDescList(mylinkednode.BuildLinkedList([]int{1, 2, 3})))
 }
+
+func TestTrainingPlan(t *testing.T) {
+	node := trainingPlan(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5}), 2)
+	fmt.Println(node.Val)
+}

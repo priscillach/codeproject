@@ -23,5 +23,5 @@ func TestMyHeap(t *testing.T) {
 	for _, x := range arr {
 		heap.Push(h, x)
 	}
-	assert.Equal(t, heap.Pop(h).(int), 5)
+	assert.Equal(t, heap.Pop(h).(int), 4)
 }

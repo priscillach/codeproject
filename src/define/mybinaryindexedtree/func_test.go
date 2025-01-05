@@ -1,4 +1,4 @@
-package mybinarayindexedtree
+package mybinaryindexedtree
 
 import (
 	"fmt"

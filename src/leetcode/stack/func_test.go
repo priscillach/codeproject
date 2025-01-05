@@ -10,7 +10,7 @@ func TestDecodeString(t *testing.T) {
 }
 
 func TestCalculate(t *testing.T) {
-	assert.Equal(t, 7, calculate("3+2*2"))
+	assert.Equal(t, 7, calculate227("3+2*2"))
 }
 
 func TestCalculate772(t *testing.T) {

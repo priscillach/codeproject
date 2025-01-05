@@ -2,6 +2,8 @@ package stack
 
 import "leetcode/src/utils/stringhelper"
 
+// https://leetcode.com/problems/basic-calculator/description/
+// finish times: 1
 func calculate224(s string) int {
 	var stack []int
 	var num int

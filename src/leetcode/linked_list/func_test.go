@@ -60,3 +60,11 @@ func TestTrainingPlan(t *testing.T) {
 	node := trainingPlan(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5}), 2)
 	fmt.Println(node.Val)
 }
+
+func TestFindMiddleElement(t *testing.T) {
+	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5, 6, 7, 8})).Val)
+	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{})))
+	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1})).Val)
+	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
+	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
+}

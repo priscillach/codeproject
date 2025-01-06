@@ -29,3 +29,7 @@ func TestMultiply(t *testing.T) {
 	MultiplyV2("9133", "0")
 	MultiplyV2("123", "456")
 }
+
+func TestFirstNonRepeatedCharacter(t *testing.T) {
+	firstNonRepeatedCharacter("")
+}

@@ -31,3 +31,9 @@ func TestFastSort(t *testing.T) {
 	FastSort(nums)
 	fmt.Println(nums)
 }
+
+func TestRadixSortLSD(t *testing.T) {
+	nums := []int{170, 45, 75, 90, 802, 24, 2, 66}
+	RadixSortLSD(nums)
+	fmt.Println(nums)
+}

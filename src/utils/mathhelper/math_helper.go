@@ -42,3 +42,10 @@ func Lcm(a, b int) int {
 func LowBit(num int) int {
 	return num & -num
 }
+
+func SwapWithThirdVariable(a, b int) (int, int) {
+	a = a + b
+	b = a - b
+	a = a - b
+	return a, b
+}

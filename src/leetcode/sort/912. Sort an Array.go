@@ -2,6 +2,8 @@ package _sort
 
 import "math/rand"
 
+// https://leetcode.com/problems/sort-an-array/
+
 // FastSort fast sort
 func FastSort(nums []int) {
 	FastSortByRange(nums, 0, len(nums)-1)
@@ -20,7 +22,6 @@ func FastSortCore(nums []int, left, right int) int {
 	randIdx := left + rand.Intn(right-left+1)
 	tmp := nums[randIdx]
 	nums[randIdx] = nums[right]
-	nums[right] = tmp
 	for left < right {
 		for left < right && nums[left] <= tmp {
 			left++

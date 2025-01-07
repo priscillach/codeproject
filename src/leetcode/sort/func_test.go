@@ -25,3 +25,9 @@ func TestReversePairs(t *testing.T) {
 	fmt.Println(reversePairs([]int{7, 5, 6, 4}))
 	fmt.Println(reversePairs([]int{1, 3, 2, 3, 1}))
 }
+
+func TestFastSort(t *testing.T) {
+	nums := []int{0, 2, 1, 5, 4, 2, 3, 1}
+	FastSort(nums)
+	fmt.Println(nums)
+}

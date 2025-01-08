@@ -53,3 +53,13 @@ func String2IntArr(str string) []int {
 	}
 	return nums
 }
+
+func ReverseString(str string) string {
+	if len(str) == 0 {
+		return str
+	}
+	runes := []rune(str)
+	lastRune := runes[len(runes)-1]
+	runes = runes[:len(runes)-1]
+	return string(append([]rune{lastRune}, []rune(ReverseString(string(runes)))...))
+}

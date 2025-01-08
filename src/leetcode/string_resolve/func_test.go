@@ -33,3 +33,9 @@ func TestMultiply(t *testing.T) {
 func TestFirstNonRepeatedCharacter(t *testing.T) {
 	firstNonRepeatedCharacter("")
 }
+
+func TestPermutations(t *testing.T) {
+	permutationsRes = permutations("1123")
+	fmt.Println(permutationsRes)
+	fmt.Println(len(permutationsRes))
+}

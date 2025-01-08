@@ -21,11 +21,11 @@ func minDistance(word1 string, word2 string) int {
 
 	for i := 1; i <= len1; i++ {
 		for j := 1; j <= len2; j++ {
-			minD := mathhelper.Min(distance[i][j-1]+1, distance[i-1][j]+1)
+			minD := mathhelper.Min(distance[i][j-1], distance[i-1][j])
 			if word1[i-1] == word2[j-1] {
-				distance[i][j] = mathhelper.Min(distance[i-1][j-1], minD)
+				distance[i][j] = mathhelper.Min(distance[i-1][j-1], minD+1)
 			} else {
-				distance[i][j] = mathhelper.Min(distance[i-1][j-1]+1, minD)
+				distance[i][j] = mathhelper.Min(distance[i-1][j-1], minD) + 1
 			}
 		}
 	}

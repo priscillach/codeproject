@@ -62,11 +62,11 @@ func TestTrainingPlan(t *testing.T) {
 }
 
 func TestFindMiddleElement(t *testing.T) {
-	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5, 6, 7, 8})).Val)
-	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{})))
-	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1})).Val)
-	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
-	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
+	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5, 6, 7, 8})).Val)
+	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{})))
+	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1})).Val)
+	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
+	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
 }
 
 func TestAddTwoNumbers(t *testing.T) {

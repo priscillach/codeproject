@@ -39,3 +39,7 @@ func TestPermutations(t *testing.T) {
 	fmt.Println(permutationsRes)
 	fmt.Println(len(permutationsRes))
 }
+
+func TestSwapString(t *testing.T) {
+	fmt.Println(swapString("Hello", "Damn"))
+}

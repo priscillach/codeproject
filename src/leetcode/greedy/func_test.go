@@ -13,5 +13,9 @@ func TestFindPrimeFactors(t *testing.T) {
 	fmt.Println(findPrimeFactors(56))
 	fmt.Println(findPrimeFactors(30))
 	fmt.Println(findPrimeFactors(17))
+}
 
+func TestReverseNumber(t *testing.T) {
+	fmt.Println(reverseNumber(-1))
+	fmt.Println(reverseNumber(-123000))
 }

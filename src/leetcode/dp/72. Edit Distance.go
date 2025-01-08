@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/edit-distance/submissions/1501558788/
+// finish times: 2
 func minDistance(word1 string, word2 string) int {
 	len1 := len(word1)
 	len2 := len(word2)

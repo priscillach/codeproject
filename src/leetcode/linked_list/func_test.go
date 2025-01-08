@@ -68,3 +68,7 @@ func TestFindMiddleElement(t *testing.T) {
 	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
 	fmt.Println(findMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
 }
+
+func TestAddTwoNumbers(t *testing.T) {
+	addTwoNumbers(mylinkednode.BuildLinkedList([]int{9, 9, 9, 9, 9, 9, 9}), mylinkednode.BuildLinkedList([]int{9, 9, 9, 9}))
+}

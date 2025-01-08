@@ -2,6 +2,7 @@ package _sort
 
 import (
 	"leetcode/src/utils/mathhelper"
+	"math"
 	"math/rand"
 )
 
@@ -47,6 +48,34 @@ func BubbleSort(nums []int) {
 				nums[j+1], nums[j] = nums[j], nums[j+1]
 			}
 		}
+	}
+}
+
+// InsertionSort
+func InsertionSort(nums []int) {
+	for i := 1; i < len(nums); i++ {
+		key := nums[i]
+		j := i - 1
+		for j >= 0 && nums[j] > key {
+			nums[j+1] = nums[j]
+			j--
+		}
+		nums[j+1] = key
+	}
+}
+
+// SelectionSort
+func SelectionSort(nums []int) {
+	for i := 0; i < len(nums)-1; i++ {
+		minNum := math.MaxInt
+		var minIdx int
+		for j := i; j < len(nums); j++ {
+			if nums[j] < minNum {
+				minNum = nums[j]
+				minIdx = j
+			}
+		}
+		nums[i], nums[minIdx] = nums[minIdx], nums[i]
 	}
 }
 

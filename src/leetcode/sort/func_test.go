@@ -37,3 +37,13 @@ func TestRadixSortLSD(t *testing.T) {
 	RadixSortLSD(nums)
 	fmt.Println(nums)
 }
+
+func TestInsertionSort(t *testing.T) {
+	InsertionSort([]int{170, 45, 75, 90, 802, 24, 2, 66})
+}
+
+func TestSelectionSort(t *testing.T) {
+	nums := []int{170, 45, 75, 90, 802, 24, 2, 66}
+	SelectionSort(nums)
+	fmt.Println(nums)
+}

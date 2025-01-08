@@ -58,3 +58,9 @@ func TestTreeToDoublyList(t *testing.T) {
 	assert.Equal(t, 1, node.Val)
 	assert.Equal(t, 11, node.Left.Val)
 }
+
+func TestMirrorBinaryTree(t *testing.T) {
+	root := mytreenode.BuildBinaryTreeFromLeetCodeCase("[4,2,7,1,3,6,9]")
+	newRoot := MirrorBinaryTree(root)
+	assert.Equal(t, 4, newRoot.Val)
+}

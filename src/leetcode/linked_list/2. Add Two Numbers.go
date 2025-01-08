@@ -2,6 +2,9 @@ package linked_list
 
 import "leetcode/src/define/mylinkednode"
 
+// https://leetcode.com/problems/add-two-numbers/description/
+// Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+// Output: [8,9,9,9,0,0,0,1]
 func addTwoNumbers(l1 *mylinkednode.ListNode, l2 *mylinkednode.ListNode) *mylinkednode.ListNode {
 	newHead := &mylinkednode.ListNode{}
 	cur := newHead

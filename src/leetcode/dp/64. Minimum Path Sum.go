@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/minimum-path-sum/submissions/1501574156/
+// finish times: 2
 func minPathSum(grid [][]int) int {
 	dp := make([][]int, len(grid))
 	for i := 0; i < len(grid); i++ {

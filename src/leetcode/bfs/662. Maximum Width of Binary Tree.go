@@ -4,6 +4,8 @@ import (
 	"leetcode/src/define/mytreenode"
 )
 
+// https://leetcode.com/problems/maximum-width-of-binary-tree/submissions/1503419371/
+// finish times: 2
 func widthOfBinaryTree(root *mytreenode.TreeNode) int {
 	var queue []*mytreenode.TreeNode
 	root.Val = 0

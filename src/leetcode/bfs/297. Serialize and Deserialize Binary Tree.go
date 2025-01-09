@@ -45,6 +45,14 @@ func (my *Codec) deserializeOnlyForUniqueValue(data string) *mytreenode.TreeNode
 	return binary_tree.BuildTree105(stringhelper.String2IntArr(arrs[0]), stringhelper.String2IntArr(arrs[1]))
 }
 
+/**
+ * Your Codec object will be instantiated and called as such:
+ * ser := Constructor();
+ * deser := Constructor();
+ * data := ser.serialize(root);
+ * ans := deser.deserialize(data);
+ */
+
 func (my *Codec) serialize(root *mytreenode.TreeNode) string {
 	var queue []*mytreenode.TreeNode
 	var res []string
@@ -98,11 +106,3 @@ func (my *Codec) deserialize(data string) *mytreenode.TreeNode {
 	}
 	return root
 }
-
-/**
- * Your Codec object will be instantiated and called as such:
- * ser := Constructor();
- * deser := Constructor();
- * data := ser.serialize(root);
- * ans := deser.deserialize(data);
- */

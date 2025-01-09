@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/problems/serialize-and-deserialize-binary-tree/submissions/1503374235/
+// finish times: 2
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode

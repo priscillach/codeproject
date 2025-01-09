@@ -57,5 +57,5 @@ func TestSerializeBinaryTree(t *testing.T) {
 }
 
 func TestIsCompleteTree(t *testing.T) {
-	assert.Equal(t, true, isCompleteTree(mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,3,4,5,6]")))
+	assert.Equal(t, true, isCompleteTreeV2(mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,3,4,5,6]")))
 }

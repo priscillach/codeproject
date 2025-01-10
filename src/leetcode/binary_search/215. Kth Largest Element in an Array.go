@@ -2,9 +2,12 @@ package binarysearch
 
 import "math/rand"
 
+// https://leetcode.com/problems/kth-largest-element-in-an-array/submissions/1503611044/
+// finish times: 2
 func findKthLargest(nums []int, k int) int {
 	p, q := 0, len(nums)-1
 	pur := len(nums) - k
+	// use binary not use recursive!
 	for p < q {
 		pos := quickSort(nums, p, q)
 		if pos == pur {

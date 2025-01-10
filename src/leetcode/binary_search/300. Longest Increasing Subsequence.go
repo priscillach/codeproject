@@ -4,6 +4,8 @@ import (
 	"sort"
 )
 
+// https://leetcode.com/problems/longest-increasing-subsequence/description/
+// finish times: 2
 func lengthOfLIS(nums []int) int {
 	sub := []int{nums[0]}
 	for i := 1; i < len(nums); i++ {
@@ -11,6 +13,8 @@ func lengthOfLIS(nums []int) int {
 		if num > sub[len(sub)-1] {
 			sub = append(sub, num)
 		} else {
+			// Search uses binary search to find and return the smallest index i
+			// in [0, n) at which f(i) is true, assuming that on the range [0, n)
 			j := sort.Search(len(sub), func(m int) bool { return sub[m] >= num })
 			sub[j] = num
 		}
@@ -19,22 +23,23 @@ func lengthOfLIS(nums []int) int {
 }
 
 func lengthOfLISV2(nums []int) int {
-	var result []int = make([]int, 0, len(nums)/2)
-	for i := 0; i < len(nums); i++ {
-		if len(result) == 0 || nums[i] > result[len(result)-1] {
-			result = append(result, nums[i])
+	sub := []int{nums[0]}
+	for i := 1; i < len(nums); i++ {
+		if nums[i] > sub[len(sub)-1] {
+			sub = append(sub, nums[i])
 			continue
 		}
-		var left, right, mid int = 0, len(result), 0
-		for left != right {
-			mid = left + (right-left)>>1
-			if nums[i] > result[mid] {
+		left, right := 0, len(sub)-1
+		for left < right {
+			mid := left + (right-left)>>1
+			if sub[mid] < nums[i] {
 				left = mid + 1
 			} else {
 				right = mid
 			}
+
 		}
-		result[right] = nums[i]
+		sub[left] = nums[i]
 	}
-	return len(result)
+	return len(sub)
 }

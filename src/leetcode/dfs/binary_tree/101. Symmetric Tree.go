@@ -6,6 +6,8 @@ func isSymmetric(root *mytreenode.TreeNode) bool {
 	return isSymmetricCore(root.Left, root.Right)
 }
 
+// https://leetcode.com/problems/symmetric-tree/description/
+// finish times: 2
 func isSymmetricCore(root1, root2 *mytreenode.TreeNode) bool {
 	if root1 == nil && root2 == nil {
 		return true

@@ -4,6 +4,8 @@ import (
 	"leetcode/src/define/mytreenode"
 )
 
+// https://leetcode.com/problems/path-sum/description/
+// finish times: 2
 func hasPathSum(root *mytreenode.TreeNode, targetSum int) bool {
 	return hasPathSumCore(root, targetSum, 0)
 }

@@ -10,6 +10,9 @@ import "leetcode/src/define/mytreenode"
  *     Right *TreeNode
  * }
  */
+
+// https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
+// finish times: 2
 func lowestCommonAncestor(root, p, q *mytreenode.TreeNode) *mytreenode.TreeNode {
 	if root == nil {
 		return nil

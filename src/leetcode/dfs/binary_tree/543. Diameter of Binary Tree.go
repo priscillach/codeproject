@@ -7,6 +7,8 @@ import (
 
 var diameterOfBinaryTreeMax int
 
+// https://leetcode.com/problems/diameter-of-binary-tree/description/
+// finish times: 2
 func diameterOfBinaryTree(root *mytreenode.TreeNode) int {
 	diameterOfBinaryTreeMax = 0
 	diameterOfBinaryTreeCore(root)

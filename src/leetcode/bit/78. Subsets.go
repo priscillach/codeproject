@@ -1,5 +1,7 @@
 package bit
 
+// https://leetcode.com/problems/subsets/description/
+// finish times: 2
 func subsets(nums []int) [][]int {
 	var res [][]int
 	for i := 0; i < 1<<len(nums); i++ {

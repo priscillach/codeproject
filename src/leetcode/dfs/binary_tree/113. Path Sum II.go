@@ -2,6 +2,8 @@ package binary_tree
 
 import "leetcode/src/define/mytreenode"
 
+// https://leetcode.com/problems/path-sum-ii/description/
+// finish times: 2
 var pathSum2Res [][]int
 
 func pathSum2(root *mytreenode.TreeNode, targetSum int) [][]int {

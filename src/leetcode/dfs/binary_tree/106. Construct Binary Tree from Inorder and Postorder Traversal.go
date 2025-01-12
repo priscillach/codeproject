@@ -42,3 +42,30 @@ func dfsBuildTree106(inLeft, inRight, postLeft, postRight int) *mytreenode.TreeN
 	root.Right = dfsBuildTree106(midIdx+1, inRight, postLeft+leftNum, postRight-1)
 	return root
 }
+
+var idxV2 int
+var inorderMap map[int]int
+
+func buildTreeV2(inorder []int, postorder []int) *mytreenode.TreeNode {
+	inorderMap = make(map[int]int)
+	for pos, node := range inorder {
+		inorderMap[node] = pos
+	}
+	idxV2 = len(inorder)
+	return buildTreeCore(inorder, postorder, 0, len(postorder)-1)
+}
+
+func buildTreeCore(inorder []int, postorder []int, left, right int) *mytreenode.TreeNode {
+	if left > right {
+		return nil
+	}
+	idxV2--
+	if left == right {
+		return &mytreenode.TreeNode{Val: inorder[left]}
+	}
+	val := postorder[idxV2]
+	node := &mytreenode.TreeNode{Val: val}
+	node.Right = buildTreeCore(inorder, postorder, inorderMap[val]+1, right)
+	node.Left = buildTreeCore(inorder, postorder, left, inorderMap[val]-1)
+	return node
+}

@@ -32,10 +32,10 @@ func lengthOfLISV2(nums []int) int {
 		left, right := 0, len(sub)-1
 		for left < right {
 			mid := left + (right-left)>>1
-			if sub[mid] < nums[i] {
-				left = mid + 1
-			} else {
+			if sub[mid] >= nums[i] {
 				right = mid
+			} else {
+				left = mid + 1
 			}
 
 		}

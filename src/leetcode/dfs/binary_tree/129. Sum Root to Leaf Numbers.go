@@ -2,6 +2,8 @@ package binary_tree
 
 import "leetcode/src/define/mytreenode"
 
+// https://leetcode.com/problems/sum-root-to-leaf-numbers/description/
+// finish times: 2
 var sum int
 
 func sumNumbers(root *mytreenode.TreeNode) int {

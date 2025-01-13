@@ -2,6 +2,7 @@ package binary_tree
 
 import "leetcode/src/define/mytreenode"
 
+// https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/
 func treeToDoublyList(root *mytreenode.TreeNode) *mytreenode.TreeNode {
 	left, right := treeToDoublyListCore(root)
 	left.Left = right

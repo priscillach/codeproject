@@ -24,3 +24,42 @@ func spiralOrder(matrix [][]int) []int {
 	}
 	return res
 }
+
+func spiralOrderV2(matrix [][]int) []int {
+	directions := [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
+	m := len(matrix)
+	n := len(matrix[0])
+	used := make([][]bool, m)
+	for i := range used {
+		used[i] = make([]bool, n)
+	}
+
+	var res []int
+	i, j, nextI, nextJ := 0, 0, 0, 0
+	d := 0
+	for {
+		res = append(res, matrix[i][j])
+		used[i][j] = true
+		firstD := d
+		nextI, nextJ = i+directions[d][0], j+directions[d][1]
+		for needTurn(used, nextI, nextJ) {
+			d++
+			d %= 4
+			if firstD == d {
+				return res
+			}
+			nextI, nextJ = i+directions[d][0], j+directions[d][1]
+		}
+		i, j = nextI, nextJ
+	}
+	return res
+}
+
+func needTurn(used [][]bool, i, j int) bool {
+	m := len(used)
+	n := len(used[0])
+	if i < 0 || i >= m || j < 0 || j >= n {
+		return true
+	}
+	return used[i][j]
+}

@@ -20,3 +20,7 @@ func TestCalculate772(t *testing.T) {
 	assert.Equal(t, 21, calculate772("3 * ( 3 + 3) + 3"))
 	assert.Equal(t, 666, calculate772("   (423+(32 * 4+ (4/3 / (312/ 32)+ 32 + 32 - 11) ) * 31 / 23   "))
 }
+
+func TestLongestValidParentheses(t *testing.T) {
+	assert.Equal(t, 4, longestValidParentheses(")()())"))
+}

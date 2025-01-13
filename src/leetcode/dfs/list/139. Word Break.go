@@ -1,5 +1,6 @@
 package list
 
+// https://leetcode.com/problems/word-break/description/
 func wordBreak(s string, wordDict []string) bool {
 	dict := make(map[string]struct{})
 	for _, word := range wordDict {

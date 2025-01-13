@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/longest-valid-parentheses/description/
+// finish times: 2
 func longestValidParentheses(s string) int {
 	var stack []int
 	maxLen := 0

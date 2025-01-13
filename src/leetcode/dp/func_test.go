@@ -16,6 +16,7 @@ func TestLongestPalindromeV2(t *testing.T) {
 
 func TestLongestValidParentheses(t *testing.T) {
 	longestValidParentheses(")()())")
+	longestValidParenthesesV2(")()())")
 }
 
 func TestMaximalSquare(t *testing.T) {

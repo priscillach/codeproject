@@ -4,13 +4,15 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/
+// unlimited transaction times and only one stock hold at a time
 func maxProfit(prices []int) int {
-	cash, hold := 0, -prices[0]
+	sell, buy := 0, -prices[0]
 	for i := 1; i < len(prices); i++ {
-		cash = mathhelper.Max(cash, hold+prices[i])
-		hold = mathhelper.Max(hold, cash-prices[i])
+		sell = mathhelper.Max(sell, buy+prices[i])
+		buy = mathhelper.Max(buy, sell-prices[i])
 	}
-	return cash
+	return sell
 }
 
 func maxProfitV2(prices []int) int {

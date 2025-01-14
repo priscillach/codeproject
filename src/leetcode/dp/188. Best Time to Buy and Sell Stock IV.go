@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/
+// finish times: 2
 func maxProfit188(k int, prices []int) int {
 	if len(prices) == 0 {
 		return 0

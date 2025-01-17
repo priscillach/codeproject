@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+// https://leetcode.com/problems/maximum-product-subarray/description/
+// finish times: 2
 func maxProduct(nums []int) int {
 	dp := make([][]int, len(nums))
 	for i := 0; i < len(nums); i++ {

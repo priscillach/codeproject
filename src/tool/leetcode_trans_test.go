@@ -8,20 +8,27 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func trainingPlan(head *mylinkednode.ListNode, cnt int) *mylinkednode.ListNode {
-	first := head
-	for i := 0; i < cnt-1; i++ {
-		first = first.Next
+func maxProduct(nums []int) int {
+	dp := make([][]int, len(nums))
+	for i := 0; i < len(nums); i++ {
+		dp[i] = []int{0, 0}
 	}
-	second := head
-	for first != nil && first.Next != nil {
-		first = first.Next
-		second = second.Next
+	res := math.MinInt64
+	for i := 0; i < len(nums); i++ {
+		if i == 0 {
+			dp[i][0] = nums[i]
+			dp[i][1] = nums[i]
+		} else if nums[i] > 0 {
+			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][0], nums[i])
+			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][1], nums[i])
+		} else if nums[i] < 0 {
+			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][1], nums[i])
+			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][0], nums[i])
+		}
+		res = mathhelper.Max(res, dp[i][1])
 	}
-	second.Next = nil
-	return second
+	return res
 }
-
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")
 	transCode = strings.ReplaceAll(transCode, "mylinkednode.", "")

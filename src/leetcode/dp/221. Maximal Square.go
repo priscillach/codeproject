@@ -4,6 +4,7 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/maximal-square/
 func maximalSquare(matrix [][]byte) int {
 	dp := make([][]int, len(matrix))
 	for i := 0; i < len(matrix); i++ {

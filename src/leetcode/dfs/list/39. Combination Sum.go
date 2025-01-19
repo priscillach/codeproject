@@ -2,6 +2,7 @@ package list
 
 var combinationSumRes [][]int
 
+// https://leetcode.com/problems/combination-sum/
 func combinationSum(candidates []int, target int) [][]int {
 	combinationSumRes = make([][]int, 0)
 	combinationSumCore(candidates, []int{}, 0, 0, target)

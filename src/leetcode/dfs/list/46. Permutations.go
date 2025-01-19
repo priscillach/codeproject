@@ -19,7 +19,6 @@ func dfs(nums []int, permutation []int) {
 		return
 	}
 	for idx, num := range nums {
-
 		if num == -11 {
 			continue
 		}

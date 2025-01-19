@@ -15,3 +15,7 @@ func TestPermuteUnique(t *testing.T) {
 func TestCombinationSum(t *testing.T) {
 	combinationSum([]int{2, 3, 6, 7}, 7)
 }
+
+func TestCombination40(t *testing.T) {
+	combinationSum40([]int{10, 1, 2, 7, 6, 1, 5}, 8)
+}

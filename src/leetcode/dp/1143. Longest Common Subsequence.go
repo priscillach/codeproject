@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/longest-common-subsequence/description/
+// finish time: 2
 func longestCommonSubsequence(text1 string, text2 string) int {
 	len1 := len(text1)
 	len2 := len(text2)

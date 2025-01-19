@@ -1,5 +1,7 @@
 package dp
 
+// https://leetcode.com/problems/maximum-length-of-repeated-subarray/description/
+// finish times: 2
 func findLength(nums1 []int, nums2 []int) int {
 	maxLen := 0
 	dp := make([][]int, len(nums1))

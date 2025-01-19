@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/coin-change/description/
+// finish times: 2
 func coinChange(coins []int, amount int) int {
 	dp := make([]int, amount+1)
 	for i := 1; i <= amount; i++ {

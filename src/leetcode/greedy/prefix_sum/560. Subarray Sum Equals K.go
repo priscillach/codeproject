@@ -1,5 +1,7 @@
 package prefix_sum
 
+// https://leetcode.com/problems/subarray-sum-equals-k/
+// finish times
 func subarraySum(nums []int, k int) int {
 	preSum := make([]int, len(nums))
 	preSum[0] = nums[0]

@@ -1,5 +1,7 @@
 package topological_graph
 
+// https://leetcode.com/problems/course-schedule/description/
+// finish times: 2
 func canFinish(numCourses int, prerequisites [][]int) bool {
 	edges := make([][]int, numCourses)
 	for i := 0; i < len(prerequisites); i++ {

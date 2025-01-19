@@ -40,6 +40,9 @@ func findOrderCore(edges [][]int, visited []int, numCourses int, course int) ([]
 	return res, true
 }
 
+// https://leetcode.com/problems/course-schedule-ii/description/
+// finish times: 2
+
 // in-degree Kahn algorithm
 func findOrderV2(numCourses int, prerequisites [][]int) []int {
 	//build the edges

@@ -4,6 +4,8 @@ import (
 	"leetcode/src/utils/mathhelper"
 )
 
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+// finish times: 2
 const LEN = 256
 
 func lengthOfLongestSubstring(s string) int {

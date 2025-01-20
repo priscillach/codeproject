@@ -2,6 +2,8 @@ package two_pointer
 
 import "leetcode/src/utils/mathhelper"
 
+// https://leetcode.com/problems/container-with-most-water/
+// finish times: 2
 func maxArea(height []int) int {
 	left, right := 0, len(height)-1
 	var res int

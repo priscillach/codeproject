@@ -2,6 +2,8 @@ package two_pointer
 
 import "sort"
 
+// https://leetcode.com/problems/3sum/
+// finish times: 2
 func threeSum(nums []int) [][]int {
 	var res [][]int
 	if len(nums) < 3 {

@@ -1,10 +1,8 @@
-package _sort
+package algo
 
-import (
-	"math/rand"
-)
+import "math/rand"
 
-// https://leetcode.com/problems/sort-an-array/
+// FastSort fast sort
 func FastSort(nums []int) {
 	FastSortByRange(nums, 0, len(nums)-1)
 }

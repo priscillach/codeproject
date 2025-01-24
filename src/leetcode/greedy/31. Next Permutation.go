@@ -1,6 +1,8 @@
 package greedy
 
-import "leetcode/src/leetcode/sort"
+import (
+	"leetcode/src/leetcode/sort/algo"
+)
 
 func nextPermutation(nums []int) {
 	for i := len(nums) - 1; i > 0; i-- {
@@ -8,7 +10,7 @@ func nextPermutation(nums []int) {
 		if nums[i] > nums[i-1] {
 			j := findLarger(nums, i, nums[i-1])
 			nums[i-1], nums[j] = nums[j], nums[i-1]
-			_sort.FastSortByRange(nums, i, len(nums)-1)
+			algo.FastSortByRange(nums, i, len(nums)-1)
 			return
 		}
 	}

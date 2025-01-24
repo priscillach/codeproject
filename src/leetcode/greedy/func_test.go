@@ -20,3 +20,7 @@ func TestReverseNumber(t *testing.T) {
 	fmt.Println(reverseNumber(-123000))
 	fmt.Println(reverseNumber(1534236469))
 }
+
+func TestReverse(t *testing.T) {
+	reverse(1534236469)
+}

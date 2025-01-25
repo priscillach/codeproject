@@ -6,6 +6,7 @@ import (
 	"sort"
 )
 
+// https://leetcode.com/problems/course-schedule-iii/description/
 func scheduleCourse(courses [][]int) int {
 	sort.Slice(courses, func(i, j int) bool {
 		return courses[i][1] < courses[j][1]

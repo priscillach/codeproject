@@ -19,6 +19,8 @@ func trapRainWater(heightMap [][]int) int {
 	var buckets MinHeap
 	visited := make([][]bool, m)
 	for i := 0; i < m; i++ {
+		visited[i][0] = true
+		visited[i][n-1] = true
 		visited[i] = make([]bool, n)
 		buckets = append(buckets, &Bucket{
 			Row:    i,
@@ -30,8 +32,6 @@ func trapRainWater(heightMap [][]int) int {
 			Col:    n - 1,
 			Height: heightMap[i][n-1],
 		})
-		visited[i][0] = true
-		visited[i][n-1] = true
 	}
 	for i := 0; i < n; i++ {
 		visited[0][i] = true

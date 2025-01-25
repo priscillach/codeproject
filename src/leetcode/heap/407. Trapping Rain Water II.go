@@ -20,6 +20,8 @@ func trapRainWater(heightMap [][]int) int {
 	visited := make([][]bool, m)
 	for i := 0; i < m; i++ {
 		visited[i] = make([]bool, n)
+		visited[i][0] = true
+		visited[i][n-1] = true
 		buckets = append(buckets, &Bucket{
 			Row:    i,
 			Col:    0,
@@ -30,8 +32,6 @@ func trapRainWater(heightMap [][]int) int {
 			Col:    n - 1,
 			Height: heightMap[i][n-1],
 		})
-		visited[i][0] = true
-		visited[i][n-1] = true
 	}
 	for i := 0; i < n; i++ {
 		visited[0][i] = true

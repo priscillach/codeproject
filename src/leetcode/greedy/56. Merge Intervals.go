@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// https://leetcode.com/problems/merge-intervals/submissions/1519581254/
 func mergeIntervals(intervals [][]int) [][]int {
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i][0] < intervals[j][0]

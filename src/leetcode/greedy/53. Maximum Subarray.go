@@ -1,5 +1,7 @@
 package greedy
 
+import "math"
+
 func maxSubArray(nums []int) int {
 	maxV := nums[0]
 	cumV := nums[0]
@@ -14,4 +16,20 @@ func maxSubArray(nums []int) int {
 		}
 	}
 	return maxV
+}
+
+func maxSubArrayV2(nums []int) int {
+	sum := 0
+	maxSum := math.MinInt
+
+	for i := 0; i < len(nums); i++ {
+		sum += nums[i]
+		if sum > maxSum {
+			maxSum = sum
+		}
+		if sum < 0 {
+			sum = 0
+		}
+	}
+	return maxSum
 }

@@ -13,6 +13,7 @@ func numSubarrayProductLessThanK(nums []int, k int) int {
 			p++
 		}
 		if product < k {
+			// 以q结尾的满足product < k的subarray有q - p + 1个
 			cnt += q - p + 1
 		}
 	}

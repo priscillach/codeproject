@@ -2,6 +2,7 @@ package linked_list
 
 import "leetcode/src/define/mylinkednode"
 
+// https://leetcode.com/problems/linked-list-cycle-ii/description/
 func detectCycle(head *mylinkednode.ListNode) *mylinkednode.ListNode {
 	var hasCycleFlag bool
 	slow, fast := head, head

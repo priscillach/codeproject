@@ -2,6 +2,7 @@ package linked_list
 
 import "leetcode/src/define/mylinkednode"
 
+// https://leetcode.com/problems/sort-list/description/
 func sortList(head *mylinkednode.ListNode) *mylinkednode.ListNode {
 	if head == nil || head.Next == nil {
 		return head

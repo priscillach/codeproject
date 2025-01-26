@@ -8,6 +8,7 @@ func getIntersectionNode(headA, headB *mylinkednode.ListNode) *mylinkednode.List
 	}
 	a := headA
 	b := headB
+
 	for a != b {
 		if a == nil {
 			a = headB

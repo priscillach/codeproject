@@ -24,3 +24,26 @@ func isPalindrome(head *mylinkednode.ListNode) bool {
 	}
 	return true
 }
+
+func isPalindromeV2(head *mylinkednode.ListNode) bool {
+	var fast, slow, prev *mylinkednode.ListNode = head, head, nil
+	for fast != nil && fast.Next != nil {
+		fast = fast.Next.Next
+		next := slow.Next
+		slow.Next = prev
+		prev = slow
+		slow = next
+	}
+
+	// odd num
+	if fast != nil {
+		slow = slow.Next
+	}
+
+	for prev != nil && slow != nil && prev.Val == slow.Val {
+		prev = prev.Next
+		slow = slow.Next
+	}
+
+	return prev == nil && slow == nil
+}

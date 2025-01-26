@@ -37,3 +37,38 @@ func deleteDuplicatesCore82(head *mylinkednode.ListNode) (*mylinkednode.ListNode
 	}
 	return head, cnt > 0
 }
+
+func deleteDuplicates82V2(head *mylinkednode.ListNode) *mylinkednode.ListNode {
+	newHead := &mylinkednode.ListNode{
+		Next: head,
+	}
+
+	cur := newHead
+	for cur != nil {
+		next, isDuplicated := findNext(cur.Next)
+		if isDuplicated {
+			cur.Next = next
+			continue
+		}
+		cur = cur.Next
+	}
+	return newHead.Next
+}
+
+func findNext(head *mylinkednode.ListNode) (*mylinkednode.ListNode, bool) {
+	var isDuplicated bool
+	if head == nil {
+		return nil, isDuplicated
+	}
+	cur := head.Next
+	for cur != nil {
+		if cur.Val == head.Val {
+			isDuplicated = true
+			cur = cur.Next
+		} else {
+			return cur, isDuplicated
+		}
+	}
+
+	return cur, isDuplicated
+}

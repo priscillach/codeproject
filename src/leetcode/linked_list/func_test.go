@@ -38,6 +38,7 @@ func TestReorderList(t *testing.T) {
 func TestDeleteDuplicates(t *testing.T) {
 	deleteDuplicates82(mylinkednode.BuildLinkedList([]int{1, 1}))
 	deleteDuplicates83(mylinkednode.BuildLinkedList([]int{1, 1}))
+	deleteDuplicates82V2(mylinkednode.BuildLinkedList([]int{1, 1}))
 }
 
 func TestSortList(t *testing.T) {
@@ -46,6 +47,7 @@ func TestSortList(t *testing.T) {
 
 func TestIsPalindrome(t *testing.T) {
 	assert.Equal(t, isPalindrome(mylinkednode.BuildLinkedList([]int{1, 0, 1})), true)
+	isPalindromeV2(mylinkednode.BuildLinkedList([]int{1, 2, 2, 1}))
 }
 
 func TestSortOddAscEvenDescList(t *testing.T) {
@@ -67,8 +69,22 @@ func TestFindMiddleElement(t *testing.T) {
 	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1})).Val)
 	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
 	fmt.Println(findLeftMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
+
+	fmt.Println(findRightMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5, 6, 7, 8})).Val)
+	fmt.Println(findRightMiddleElement(mylinkednode.BuildLinkedList([]int{})))
+	fmt.Println(findRightMiddleElement(mylinkednode.BuildLinkedList([]int{1})).Val)
+	fmt.Println(findRightMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2})).Val)
+	fmt.Println(findRightMiddleElement(mylinkednode.BuildLinkedList([]int{1, 2, 3})).Val)
 }
 
 func TestAddTwoNumbers(t *testing.T) {
 	addTwoNumbers(mylinkednode.BuildLinkedList([]int{9, 9, 9, 9, 9, 9, 9}), mylinkednode.BuildLinkedList([]int{9, 9, 9, 9}))
+}
+
+func TestReverseKGroup(t *testing.T) {
+	reverseKGroup(mylinkednode.BuildLinkedList([]int{1, 2, 3, 4, 5}), 2)
+}
+
+func TestGetIntersectionNode(t *testing.T) {
+	getIntersectionNode(mylinkednode.BuildLinkedList([]int{1, 5}), mylinkednode.BuildLinkedList([]int{2, 6, 4}))
 }

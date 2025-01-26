@@ -27,3 +27,20 @@ func deleteDuplicatesCore83(head *mylinkednode.ListNode) *mylinkednode.ListNode 
 	}
 	return cur
 }
+
+func deleteDuplicatesV2(head *mylinkednode.ListNode) *mylinkednode.ListNode {
+	if head == nil {
+		return nil
+	}
+	cur := head
+	var next *mylinkednode.ListNode
+	for cur != nil {
+		next = cur.Next
+		for next != nil && next.Val == cur.Val {
+			next = next.Next
+		}
+		cur.Next = next
+		cur = next
+	}
+	return head
+}

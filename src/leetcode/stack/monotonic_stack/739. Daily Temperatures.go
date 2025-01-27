@@ -1,5 +1,6 @@
 package monotonic_stack
 
+// https://leetcode.com/problems/daily-temperatures/description/
 func dailyTemperatures(temperatures []int) []int {
 	res := make([]int, len(temperatures))
 	var stack []int

@@ -5,6 +5,7 @@ import (
 	"strconv"
 )
 
+// https://leetcode.com/problems/remove-k-digits/description/
 func removeKdigits(num string, k int) string {
 	var stack []int
 	for i := 0; i < len(num); i++ {

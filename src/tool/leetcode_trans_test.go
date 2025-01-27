@@ -8,26 +8,30 @@ import (
 
 func TestTransLCP(t *testing.T) {
 	transCode := `
-func maxProduct(nums []int) int {
-	dp := make([][]int, len(nums))
-	for i := 0; i < len(nums); i++ {
-		dp[i] = []int{0, 0}
-	}
-	res := math.MinInt64
-	for i := 0; i < len(nums); i++ {
-		if i == 0 {
-			dp[i][0] = nums[i]
-			dp[i][1] = nums[i]
-		} else if nums[i] > 0 {
-			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][0], nums[i])
-			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][1], nums[i])
-		} else if nums[i] < 0 {
-			dp[i][0] = mathhelper.Min(nums[i]*dp[i-1][1], nums[i])
-			dp[i][1] = mathhelper.Max(nums[i]*dp[i-1][0], nums[i])
+func findMinDifference(timePoints []string) int {
+	sort.Strings(timePoints)
+	minDistance := math.MaxInt
+	for i := 0; i < len(timePoints); i++ {
+		if i == len(timePoints)-1 {
+			minDistance = mathhelper.Min(minDistance, computeMinDifference(timePoints[0], timePoints[i]))
+			continue
 		}
-		res = mathhelper.Max(res, dp[i][1])
+		minDistance = mathhelper.Min(minDistance, computeMinDifference(timePoints[i], timePoints[i+1]))
 	}
-	return res
+	return minDistance
+}
+
+func computeMinDifference(time1, time2 string) int {
+	time1Slice := strings.Split(time1, ":")
+	time2Slice := strings.Split(time2, ":")
+	t1Hour, _ := strconv.Atoi(time1Slice[0])
+	t1Min, _ := strconv.Atoi(time1Slice[1])
+	t2Hour, _ := strconv.Atoi(time2Slice[0])
+	t2Min, _ := strconv.Atoi(time2Slice[1])
+	time1Sum := t1Hour*60 + t1Min
+	time2Sum := t2Hour*60 + t2Min
+	dis := mathhelper.Abs(time1Sum - time2Sum)
+	return mathhelper.Min(dis, 24*60-dis)
 }
 `
 	transCode = strings.ReplaceAll(transCode, "mytreenode.", "")

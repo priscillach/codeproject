@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/problems/minimum-time-difference/description/
 func findMinDifference(timePoints []string) int {
 	sort.Strings(timePoints)
 	minDistance := math.MaxInt
@@ -30,6 +31,6 @@ func computeMinDifference(time1, time2 string) int {
 	t2Min, _ := strconv.Atoi(time2Slice[1])
 	time1Sum := t1Hour*60 + t1Min
 	time2Sum := t2Hour*60 + t2Min
-	dis := int(mathhelper.Abs(int(time1Sum) - int(time2Sum)))
+	dis := mathhelper.Abs(time1Sum - time2Sum)
 	return mathhelper.Min(dis, 24*60-dis)
 }

@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/problems/largest-number/description/
 func largestNumber(nums []int) string {
 	sort.Slice(nums, func(i, j int) bool {
 		a, b := strconv.Itoa(nums[i]), strconv.Itoa(nums[j])

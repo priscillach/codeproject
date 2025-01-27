@@ -45,3 +45,16 @@ func subarraySumV2(nums []int, k int) int {
 
 	return out
 }
+
+func subarraySumV3(nums []int, k int) int {
+	cnt := 0
+	preSum := 0
+	preSumMap := make(map[int]int)
+	preSumMap[0] = 1
+	for _, num := range nums {
+		preSum += num
+		cnt += preSumMap[preSum-k]
+		preSumMap[preSum]++
+	}
+	return cnt
+}

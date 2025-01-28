@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/problems/decode-string/description/
 func decodeString(s string) string {
 	strStack := []string{""}
 	var numStack []int

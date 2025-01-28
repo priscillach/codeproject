@@ -22,3 +22,21 @@ func longestValidParentheses(s string) int {
 	}
 	return maxLen
 }
+
+func longestValidParenthesesV2(s string) int {
+	var stack []int
+	maxLen := 0
+	for i := 0; i < len(s); i++ {
+		if len(stack) > 0 && s[stack[len(stack)-1]] == '(' && s[i] == ')' {
+			stack = stack[:len(stack)-1]
+			if len(stack) == 0 {
+				maxLen = i + 1
+			} else if maxLen < i-stack[len(stack)-1] {
+				maxLen = i - stack[len(stack)-1]
+			}
+		} else {
+			stack = append(stack, i)
+		}
+	}
+	return maxLen
+}

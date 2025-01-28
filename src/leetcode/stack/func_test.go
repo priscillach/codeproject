@@ -6,7 +6,7 @@ import (
 )
 
 func TestDecodeString(t *testing.T) {
-	decodeString("2[abc]3[cd]ef")
+	decodeString("x3[4[a]b2[c]]y")
 }
 
 func TestCalculate(t *testing.T) {
@@ -23,4 +23,5 @@ func TestCalculate772(t *testing.T) {
 
 func TestLongestValidParentheses(t *testing.T) {
 	assert.Equal(t, 4, longestValidParentheses(")()())"))
+	longestValidParenthesesV2(")()())")
 }

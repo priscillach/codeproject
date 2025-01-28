@@ -30,9 +30,7 @@ func (this *LFUCache) Get(key int) int {
 	element := this.nodes[key]
 	node := element.Value.(*Node)
 	// add cnt and minFrequency
-	if node.Cnt == 0 {
-		this.minFrequency = 1
-	} else if node.Cnt == this.minFrequency && this.lists[node.Cnt].Len() == 1 {
+	if node.Cnt == this.minFrequency && this.lists[node.Cnt].Len() == 1 {
 		this.minFrequency++
 	}
 	this.lists[node.Cnt].Remove(element)

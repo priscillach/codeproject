@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// https://leetcode.com/problems/restore-ip-addresses/description/
 var IpAddresses []string
 
 func restoreIpAddresses(s string) []string {
@@ -50,4 +51,39 @@ func isValid(s string) bool {
 		return false
 	}
 	return true
+}
+
+func restoreIpAddressesV2(s string) []string {
+	IpAddresses = make([]string, 0)
+	dfsRestoreIpAddressesV2(s, 0, []string{}, 0)
+	return IpAddresses
+}
+
+func dfsRestoreIpAddressesV2(s string, cur int, ip []string, n int) {
+	if n == 4 && cur == len(s) {
+		IpAddresses = append(IpAddresses, strings.Join(ip, "."))
+		return
+	}
+	for i := cur; i < len(s) && i < cur+3; i++ {
+		if single, ok := isValidV2(s[cur : i+1]); ok {
+			dfsRestoreIpAddressesV2(s, i+1, append(ip, single), n+1)
+		}
+	}
+}
+
+func isValidV2(s string) (string, bool) {
+	if len(s) > 1 && s[0] == '0' {
+		return "", false
+	}
+	var num int
+	for i := range s {
+		if s[i] < '0' || s[i] > '9' {
+			return "", false
+		}
+		num = 10*num + int(s[i]-'0')
+	}
+	if num < 0 || num > 255 {
+		return "", false
+	}
+	return strconv.Itoa(num), true
 }

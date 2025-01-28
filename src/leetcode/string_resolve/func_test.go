@@ -6,7 +6,7 @@ import (
 )
 
 func TestAddStrings(t *testing.T) {
-	fmt.Println(AddStrings("125", "92"))
+	fmt.Println(addStrings("125", "92"))
 }
 
 func TestRestoreIpAddresses(t *testing.T) {

@@ -2,6 +2,7 @@ package unclassified
 
 import "math"
 
+// https://leetcode.com/problems/first-missing-positive/description/
 func firstMissingPositive(nums []int) int {
 	// assume nums 1 2 .. len(nums)
 	// nums append, make len(nums) can find the corresponding index

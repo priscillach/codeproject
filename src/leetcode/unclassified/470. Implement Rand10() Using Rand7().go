@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// https://leetcode.com/problems/implement-rand10-using-rand7/description/
 func rand10() int {
 	// generate 1 - 49 fairly
 	x := (rand7()-1)*7 + rand7()

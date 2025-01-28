@@ -28,9 +28,7 @@ func permutationCore(runes []rune, permutation []rune) {
 		}
 		used[runes[i]] = true
 		runeCountMap[runes[i]]--
-		permutation = append(permutation, runes[i])
-		permutationCore(runes, permutation)
+		permutationCore(runes, append(permutation, runes[i]))
 		runeCountMap[runes[i]]++
-		permutation = permutation[:len(permutation)-1]
 	}
 }

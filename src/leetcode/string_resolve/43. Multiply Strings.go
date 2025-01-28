@@ -13,7 +13,7 @@ func Multiply(num1 string, num2 string) string {
 			idx1 := len(num1) - j - 1
 			b := stringhelper.NumByte2Int(num1[idx1])
 			add := addZero(stringhelper.Int2String(a*b), j+i)
-			res = AddStrings(res, add)
+			res = addStrings(res, add)
 		}
 	}
 	return res
@@ -29,6 +29,7 @@ func addZero(num string, zeros int) string {
 	return num
 }
 
+// https://leetcode.com/problems/multiply-strings/description/
 func MultiplyV2(num1 string, num2 string) string {
 	// the max length of multipliers is the sum of the two digits
 	res := make([]int, len(num1)+len(num2))

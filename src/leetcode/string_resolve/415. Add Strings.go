@@ -3,9 +3,11 @@ package string_resolve
 import (
 	"leetcode/src/utils/mathhelper"
 	"leetcode/src/utils/stringhelper"
+	"strconv"
 )
 
-func AddStrings(num1 string, num2 string) string {
+// https://leetcode.com/problems/add-strings/description/
+func addStrings(num1 string, num2 string) string {
 	len1 := len(num1)
 	len2 := len(num2)
 	lenM := mathhelper.Max(len1, len2)
@@ -36,4 +38,25 @@ func AddStrings(num1 string, num2 string) string {
 		res = append([]byte{stringhelper.Int2NumByte(add)}, res...)
 	}
 	return string(res)
+}
+
+func addStringsV2(num1 string, num2 string) string {
+	carry := 0
+	var res string
+	for i := 0; i < mathhelper.Max(len(num1), len(num2)); i++ {
+		var a, b int
+		if i < len(num1) {
+			a = int(num1[len(num1)-i-1] - '0')
+		}
+		if i < len(num2) {
+			b = int(num2[len(num2)-i-1] - '0')
+		}
+		sum := a + b + carry
+		carry = sum / 10
+		res = strconv.Itoa(sum%10) + res
+	}
+	if carry > 0 {
+		res = strconv.Itoa(carry) + res
+	}
+	return res
 }

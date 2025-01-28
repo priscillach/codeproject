@@ -4,6 +4,7 @@ import (
 	"leetcode/src/utils/stringhelper"
 )
 
+// https://leetcode.com/problems/string-to-integer-atoi/description/
 func MyAtoi(s string) int {
 	s = trim(s)
 	sign := getSign(s)

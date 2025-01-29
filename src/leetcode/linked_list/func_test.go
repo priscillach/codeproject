@@ -88,3 +88,7 @@ func TestReverseKGroup(t *testing.T) {
 func TestGetIntersectionNode(t *testing.T) {
 	getIntersectionNode(mylinkednode.BuildLinkedList([]int{1, 5}), mylinkednode.BuildLinkedList([]int{2, 6, 4}))
 }
+
+func TestRotateRight(t *testing.T) {
+	rotateRight(mylinkednode.BuildLinkedList([]int{1, 2}), 1)
+}

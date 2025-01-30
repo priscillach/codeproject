@@ -29,3 +29,7 @@ func TestMSqrt(t *testing.T) {
 func TestFindPeakElement(t *testing.T) {
 	assert.Equal(t, findPeakElement([]int{1, 2, 3, 1}), 2)
 }
+
+func TestSearchMatrix(t *testing.T) {
+	searchMatrix([][]int{{1, 1}}, 0)
+}

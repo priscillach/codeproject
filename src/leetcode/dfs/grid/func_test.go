@@ -21,3 +21,7 @@ func TestWordSearch(t *testing.T) {
 func TestSpiralOrder(t *testing.T) {
 	spiralOrderV2([][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})
 }
+
+func TestGenerateMatrix(t *testing.T) {
+	generateMatrix(3)
+}

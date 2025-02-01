@@ -64,3 +64,10 @@ func TestMirrorBinaryTree(t *testing.T) {
 	newRoot := MirrorBinaryTree(root)
 	assert.Equal(t, 4, newRoot.Val)
 }
+
+func TestFindTargetNode(t *testing.T) {
+	root := mytreenode.BuildBinaryTreeFromLeetCodeCase("[7,3,9,1,5]")
+	target := 2
+	assert.Equal(t, 7, findTargetNode(root, target))
+	assert.Equal(t, 7, findTargetNodeV2(root, target))
+}

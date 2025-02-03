@@ -2,6 +2,7 @@ package binary_tree
 
 import "leetcode/src/define/mytreenode"
 
+// https://leetcode.com/problems/delete-node-in-a-bst/description/
 func deleteNode(root *mytreenode.TreeNode, key int) *mytreenode.TreeNode {
 	if root == nil {
 		return nil

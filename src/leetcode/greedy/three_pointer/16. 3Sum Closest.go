@@ -1,4 +1,4 @@
-package two_pointer
+package three_pointer
 
 import (
 	"math"

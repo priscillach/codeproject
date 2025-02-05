@@ -24,3 +24,7 @@ func TestReverseNumber(t *testing.T) {
 func TestReverse(t *testing.T) {
 	reverse(1534236469)
 }
+
+func TestJump(t *testing.T) {
+	fmt.Println(jumpV2([]int{3, 0, 0}))
+}

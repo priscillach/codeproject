@@ -75,3 +75,7 @@ func TestFindTargetNode(t *testing.T) {
 func TestDeleteNode(t *testing.T) {
 	deleteNode(mytreenode.BuildBinaryTreeFromLeetCodeCase("[8,0,31,null,6,28,45,1,7,25,30,32,49,null,4,null,null,9,26,29,null,null,42,47,null,2,5,null,12,null,27,null,null,41,43,46,48,null,3,null,null,10,19,null,null,33,null,null,44,null,null,null,null,null,null,null,11,18,20,null,37,null,null,null,null,14,null,null,22,36,38,13,15,21,24,34,null,null,39,null,null,null,16,null,null,23,null,null,35,null,40,null,17]"), 1)
 }
+
+func TestFlatten(t *testing.T) {
+	flatten(mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,5,3,4,null,6]"))
+}

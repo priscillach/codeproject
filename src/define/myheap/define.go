@@ -3,6 +3,7 @@ package myheap
 import (
 	"container/heap"
 	"leetcode/src/define/mylinkednode"
+	"sort"
 )
 
 type MaxHeap []int
@@ -76,5 +77,36 @@ func HeapSortAsc(arr []int) {
 
 	for i := 0; i < len(arr); i++ {
 		arr[i] = heap.Pop(h).(int)
+	}
+}
+
+type SortHeap struct {
+	sort.IntSlice
+}
+
+func (h *SortHeap) Push(x interface{}) {
+	h.IntSlice = append(h.IntSlice, x.(int))
+}
+
+func (h *SortHeap) Pop() interface{} {
+	x := h.IntSlice[len(h.IntSlice)-1]
+	h.IntSlice = h.IntSlice[0 : len(h.IntSlice)-1]
+	return x
+}
+
+func (h *SortHeap) Less(i, j int) bool {
+	return sort.Reverse(h.IntSlice).Less(i, j)
+}
+
+func HeapSortDescBySortHeap(arr []int) {
+	h := SortHeap{}
+	heap.Init(&h)
+
+	for _, x := range arr {
+		heap.Push(&h, x)
+	}
+
+	for i := 0; i < len(arr); i++ {
+		arr[i] = heap.Pop(&h).(int)
 	}
 }

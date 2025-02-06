@@ -14,6 +14,10 @@ func TestHeapSort(t *testing.T) {
 	fmt.Println("Sorted asc array:", arr)
 	HeapSortDesc(arr)
 	fmt.Println("Sorted desc array:", arr)
+
+	arr = []int{12, 4, 5, 6, 7, 11, 13, 5, 6, 7}
+	HeapSortDescBySortHeap(arr)
+	fmt.Println("Sorted asc array:", arr)
 }
 
 func TestMyHeap(t *testing.T) {

@@ -9,3 +9,7 @@ func TestMinWindow(t *testing.T) {
 func TestMinSubArrayLen(t *testing.T) {
 	minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3})
 }
+
+func TestIsPalindrome(t *testing.T) {
+	isPalindrome("A man, a plan, a canal: Panama")
+}

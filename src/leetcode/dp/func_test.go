@@ -30,3 +30,7 @@ func TestFindLength(t *testing.T) {
 func TestRob(t *testing.T) {
 	rob198([]int{1, 2, 3, 1})
 }
+
+func TestNumCycleReturnOrigin(t *testing.T) {
+	fmt.Println(numCycleReturnOrigin(10, 4))
+}

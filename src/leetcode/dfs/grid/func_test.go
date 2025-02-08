@@ -25,3 +25,9 @@ func TestSpiralOrder(t *testing.T) {
 func TestGenerateMatrix(t *testing.T) {
 	generateMatrix(3)
 }
+
+func TestLongestIncreasingPath(t *testing.T) {
+	longestIncreasingPath([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}})
+	longestIncreasingPathV2([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}})
+	longestIncreasingPathV3([][]int{{9, 9, 4}, {6, 6, 8}, {2, 1, 1}})
+}

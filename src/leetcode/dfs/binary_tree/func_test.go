@@ -79,3 +79,7 @@ func TestDeleteNode(t *testing.T) {
 func TestFlatten(t *testing.T) {
 	flatten(mytreenode.BuildBinaryTreeFromLeetCodeCase("[1,2,5,3,4,null,6]"))
 }
+
+func TestKthSmallest(t *testing.T) {
+	kthSmallest(mytreenode.BuildBinaryTreeFromLeetCodeCase("[5,3,6,2,4,null,null,1]"), 3)
+}

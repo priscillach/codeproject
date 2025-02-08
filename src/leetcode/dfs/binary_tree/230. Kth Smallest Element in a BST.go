@@ -2,40 +2,40 @@ package binary_tree
 
 import "leetcode/src/define/mytreenode"
 
-func findTargetNode(root *mytreenode.TreeNode, cnt int) int {
+func kthSmallest(root *mytreenode.TreeNode, k int) int {
 	var res int
-	var dfs func(n *mytreenode.TreeNode)
-	dfs = func(n *mytreenode.TreeNode) {
+	var kthSmallestDfs func(n *mytreenode.TreeNode)
+	kthSmallestDfs = func(n *mytreenode.TreeNode) {
 		if n == nil {
 			return
 		}
-		dfs(n.Right)
-		cnt--
-		if cnt == 0 {
+		kthSmallestDfs(n.Left)
+		k--
+		if k == 0 {
 			res = n.Val
 			return
 		}
-		dfs(n.Left)
+		kthSmallestDfs(n.Right)
 	}
-	dfs(root)
+	kthSmallestDfs(root)
 	return res
 }
 
-func findTargetNodeV2(root *mytreenode.TreeNode, cnt int) int {
+func kthSmallestV2(root *mytreenode.TreeNode, k int) int {
 	var stack []*mytreenode.TreeNode
 	cur := root
 	for cur != nil || len(stack) > 0 {
 		for cur != nil {
 			stack = append(stack, cur)
-			cur = cur.Right
+			cur = cur.Left
 		}
-		cnt--
+		k--
 		cur = stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
-		if cnt == 0 {
+		if k == 0 {
 			return cur.Val
 		}
-		cur = cur.Left
+		cur = cur.Right
 	}
 	return 0
 }

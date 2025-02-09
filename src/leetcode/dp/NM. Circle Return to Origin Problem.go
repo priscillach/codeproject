@@ -6,6 +6,8 @@ func numCycleReturnOrigin(n, k int) int {
 	for i := 0; i <= k; i++ {
 		dp[i] = make([]int, n)
 	}
+
+	// dp[i][j] represents after i steps to j index
 	dp[0][0] = 1
 	for i := 1; i <= k; i++ {
 		for j := 0; j < n; j++ {

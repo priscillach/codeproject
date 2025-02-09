@@ -65,7 +65,6 @@ func findDiagonalOrderV2(mat [][]int) []int {
 			// 不能使用sort.Reverse(sort.IntSlice(list))
 			// sort.Reverse需要传入排序后的列表
 			reverse(list)
-			reverse(list)
 		}
 		res = append(res, list...)
 	}

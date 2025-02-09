@@ -2,6 +2,7 @@ package prefix_tree
 
 import "leetcode/src/utils/mathhelper"
 
+// https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/
 func findKthNumber(n int, k int) int {
 	cur := 1
 	k--

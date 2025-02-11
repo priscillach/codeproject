@@ -95,7 +95,8 @@ func (h *SortHeap) Pop() interface{} {
 }
 
 func (h *SortHeap) Less(i, j int) bool {
-	return sort.Reverse(h.IntSlice).Less(i, j)
+	// return sort.Reverse(h.IntSlice).Less(i, j)
+	return h.IntSlice.Less(i, j)
 }
 
 func HeapSortDescBySortHeap(arr []int) {

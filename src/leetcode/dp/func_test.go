@@ -34,3 +34,7 @@ func TestRob(t *testing.T) {
 func TestNumCycleReturnOrigin(t *testing.T) {
 	fmt.Println(numCycleReturnOrigin(10, 4))
 }
+
+func TestIsMatch(t *testing.T) {
+	isMatch("aab", "c*a*b")
+}

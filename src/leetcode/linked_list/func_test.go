@@ -92,3 +92,7 @@ func TestGetIntersectionNode(t *testing.T) {
 func TestRotateRight(t *testing.T) {
 	rotateRight(mylinkednode.BuildLinkedList([]int{1, 2}), 1)
 }
+
+func TestAddTwoNumbers445(t *testing.T) {
+	addTwoNumbers445(mylinkednode.BuildLinkedList([]int{7, 2, 4, 3}), mylinkednode.BuildLinkedList([]int{5, 6, 4}))
+}

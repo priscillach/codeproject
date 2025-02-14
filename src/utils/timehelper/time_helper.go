@@ -5,6 +5,12 @@ import (
 	"time"
 )
 
+const (
+	DaySeconds    = 24 * 60 * 60
+	HourSeconds   = 60 * 60
+	MinuteSeconds = 60
+)
+
 func FormatDuration(duration time.Duration) string {
 	hours := int(duration.Hours())
 	minutes := int(duration.Minutes()) % 60

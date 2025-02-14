@@ -81,3 +81,32 @@ func reverseBetweenV2(head *mylinkednode.ListNode, left int, right int) *mylinke
 	leftTail.Next = prev
 	return newHead.Next
 }
+
+func reverseBetweenV3(head *mylinkednode.ListNode, left int, right int) *mylinkednode.ListNode {
+	newHead := &mylinkednode.ListNode{Next: head}
+	leftTail := newHead
+	cnt := 0
+	cur := newHead
+	for {
+		if cnt == left-1 {
+			leftTail = cur
+		}
+		if cnt == right+1 {
+			break
+		}
+		cur = cur.Next
+		cnt++
+	}
+	rightHead := cur
+
+	prev := rightHead
+	cur = leftTail.Next
+	for i := 0; i < right-left+1; i++ {
+		next := cur.Next
+		cur.Next = prev
+		prev = cur
+		cur = next
+	}
+	leftTail.Next = prev
+	return newHead.Next
+}

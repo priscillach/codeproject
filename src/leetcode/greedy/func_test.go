@@ -2,6 +2,7 @@ package greedy
 
 import (
 	"fmt"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
@@ -27,4 +28,23 @@ func TestReverse(t *testing.T) {
 
 func TestJump(t *testing.T) {
 	fmt.Println(jumpV2([]int{3, 0, 0}))
+}
+
+func TestFindTimeRangeByTimePoint(t *testing.T) {
+	var s, e string
+	s, e = findTimeRangeByTimePoint("2024-09-27 16:40:00", "20:00:00 1", "02:00:00 3")
+	assert.Equal(t, "2024-09-30 20:00:00", s)
+	assert.Equal(t, "2024-10-02 02:00:00", e)
+	s, e = findTimeRangeByTimePoint("2024-09-24 16:40:00", "20:00:00 1", "02:00:00 3")
+	assert.Equal(t, "2024-09-23 20:00:00", s)
+	assert.Equal(t, "2024-09-25 02:00:00", e)
+	s, e = findTimeRangeByTimePoint("2024-09-24 16:40:00", "20:00:00 3", "02:00:00 1")
+	assert.Equal(t, "2024-09-25 20:00:00", s)
+	assert.Equal(t, "2024-09-30 02:00:00", e)
+	s, e = findTimeRangeByTimePoint("2024-09-27 16:40:00", "20:00:00 3", "02:00:00 1")
+	assert.Equal(t, "2024-09-25 20:00:00", s)
+	assert.Equal(t, "2024-09-30 02:00:00", e)
+	s, e = findTimeRangeByTimePoint("2024-09-27 16:40:00", "20:00:00 7", "02:00:00 1")
+	assert.Equal(t, "2024-09-29 20:00:00", s)
+	assert.Equal(t, "2024-09-30 02:00:00", e)
 }

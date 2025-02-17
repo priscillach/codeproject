@@ -12,7 +12,7 @@ import "leetcode/src/define/mytreenode"
  */
 
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/
-// finish times: 2
+// finish times: 3
 func lowestCommonAncestor(root, p, q *mytreenode.TreeNode) *mytreenode.TreeNode {
 	if root == nil {
 		return nil

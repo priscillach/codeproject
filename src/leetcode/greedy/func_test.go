@@ -48,3 +48,7 @@ func TestFindTimeRangeByTimePoint(t *testing.T) {
 	assert.Equal(t, "2024-09-29 20:00:00", s)
 	assert.Equal(t, "2024-09-30 02:00:00", e)
 }
+
+func TestIsPalindrome(t *testing.T) {
+	isPalindrome(-121)
+}

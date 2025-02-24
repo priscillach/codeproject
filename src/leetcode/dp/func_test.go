@@ -38,3 +38,7 @@ func TestNumCycleReturnOrigin(t *testing.T) {
 func TestIsMatch(t *testing.T) {
 	isMatch("aab", "c*a*b")
 }
+
+func TestMinimumTotal(t *testing.T) {
+	minimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}})
+}

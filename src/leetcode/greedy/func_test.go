@@ -52,3 +52,12 @@ func TestFindTimeRangeByTimePoint(t *testing.T) {
 func TestIsPalindrome(t *testing.T) {
 	isPalindrome(-121)
 }
+
+func TestMaxScorePath(t *testing.T) {
+	arr := []int{6, -2, 3, 4, 1, -4, 1, 2, -6, -3, 2}
+	startScore := 5
+	canReach, maxScore, path := maxScorePath(arr, startScore)
+	fmt.Println("是否能到达最后一个索引:", canReach)
+	fmt.Println("最大分数:", maxScore)
+	fmt.Println("路径:", path)
+}

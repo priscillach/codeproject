@@ -83,3 +83,7 @@ func TestFlatten(t *testing.T) {
 func TestKthSmallest(t *testing.T) {
 	kthSmallest(mytreenode.BuildBinaryTreeFromLeetCodeCase("[5,3,6,2,4,null,null,1]"), 3)
 }
+
+func TestNumTrees(t *testing.T) {
+	fmt.Println(numTrees(3))
+}

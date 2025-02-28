@@ -57,3 +57,15 @@ func RemoveDuplicatesInPlaceWithOutLibraries(nums []int) []int {
 	}
 	return nums[:j]
 }
+
+func ReverseBetween(nums []int, start, end int) {
+	for i, j := start, end; i < j; i, j = i+1, j-1 {
+		nums[i], nums[j] = nums[j], nums[i]
+	}
+}
+
+func Reverse(nums []int) {
+	for i, j := 0, len(nums)-1; i < j; i, j = i+1, j-1 {
+		nums[i], nums[j] = nums[j], nums[i]
+	}
+}

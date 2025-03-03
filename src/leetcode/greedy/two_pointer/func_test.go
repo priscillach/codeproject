@@ -1,6 +1,9 @@
 package two_pointer
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestMinWindow(t *testing.T) {
 	minWindow("ADOBECODEBANC", "ABC")
@@ -16,4 +19,8 @@ func TestIsPalindrome(t *testing.T) {
 
 func TestFindDuplicate(t *testing.T) {
 	findDuplicateV2([]int{1, 3, 4, 2, 2})
+}
+
+func TestTriangleNumber(t *testing.T) {
+	fmt.Println(triangleNumber([]int{48, 66, 61, 46, 94, 75}))
 }

@@ -4,10 +4,10 @@ var memBST map[int]int
 
 func numTrees(n int) int {
 	memBST = make(map[int]int)
-	return dfs(0, n-1)
+	return numTreesDfs(0, n-1)
 }
 
-func dfs(left, right int) int {
+func numTreesDfs(left, right int) int {
 	if left == right {
 		return 1
 	}
@@ -17,19 +17,31 @@ func dfs(left, right int) int {
 	sumBST := 0
 	for i := left; i <= right; i++ {
 		if i == left {
-			leftSum := dfs(left-1, left-1)
-			rightSum := dfs(left+1, right)
+			leftSum := numTreesDfs(left-1, left-1)
+			rightSum := numTreesDfs(left+1, right)
 			sumBST += leftSum * rightSum
 		} else if i == right {
-			leftSum := dfs(left, right-1)
-			rightSum := dfs(right+1, right+1)
+			leftSum := numTreesDfs(left, right-1)
+			rightSum := numTreesDfs(right+1, right+1)
 			sumBST += leftSum * rightSum
 		} else {
-			leftSum := dfs(left, i-1)
-			rightSum := dfs(i+1, right)
+			leftSum := numTreesDfs(left, i-1)
+			rightSum := numTreesDfs(i+1, right)
 			sumBST += leftSum * rightSum
 		}
 	}
 	memBST[right-left+1] = sumBST
 	return sumBST
+}
+
+func numTreesV2(n int) int {
+	dp := make([]int, n+1)
+	dp[0] = 1
+	dp[1] = 1
+	for i := 2; i <= n; i++ {
+		for j := 1; j <= i; j++ {
+			dp[i] += dp[j-1] * dp[i-j]
+		}
+	}
+	return dp[n]
 }

@@ -1,7 +1,6 @@
 package monotonic_queue
 
 // https://leetcode.com/problems/sliding-window-maximum/
-// finish times: 2
 func maxSlidingWindow(nums []int, k int) []int {
 	var deQueue []int
 	var res []int

@@ -18,3 +18,9 @@ func TestTrap(t *testing.T) {
 func TestRemoveKdigits(t *testing.T) {
 	assert.Equal(t, "11", removeKdigits("112", 1))
 }
+
+func TestMaximalRectangle(t *testing.T) {
+	assert.Equal(t, 6, maximalRectangle([][]byte{
+		{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'},
+	}))
+}

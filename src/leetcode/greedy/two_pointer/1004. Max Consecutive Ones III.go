@@ -6,21 +6,19 @@ func longestOnes(nums []int, k int) int {
 	maxOnes := 0
 	left, right := 0, 0
 	for right < len(nums) {
-		if nums[right] == 1 {
-			right++
-		} else {
+		if nums[right] == 0 {
 			k--
-			right++
 		}
+		right++
 		if k == 0 {
 			maxOnes = mathhelper.Max(maxOnes, right-left)
 		}
-		for k < 0 {
+		if k < 0 {
 			if nums[left] == 0 {
 				k++
 			}
 			left++
 		}
 	}
-	return mathhelper.Max(maxOnes, right-left)
+	return mathhelper.Max(maxOnes, right-left) // target nums = [0,0,0,1], k = 4
 }

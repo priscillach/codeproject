@@ -88,16 +88,6 @@
             </TagInfo>
           </value>
         </entry>
-        <entry key="21312">
-          <value>
-            <TagInfo>
-              <option name="name" value="21312" />
-              <option name="timestamp" value="1742181069544" />
-              <option name="colorHue" value="0.30136567" />
-              <option name="order" value="1742181069544" />
-            </TagInfo>
-          </value>
-        </entry>
         <entry key="3">
           <value>
             <TagInfo>
@@ -945,6 +935,13 @@
             </set>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/134. Gas Station.go">
+          <value>
+            <set>
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/greedy/135. Candy.go">
           <value>
             <set>
@@ -1099,6 +1096,14 @@
             </set>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/1004. Max Consecutive Ones III.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/11. Container With Most Water.go">
           <value>
             <set>
@@ -1177,7 +1182,6 @@
         <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/948. Bag of Tokens.go">
           <value>
             <set>
-              <option value="*" />
               <option value="***" />
               <option value="2" />
             </set>

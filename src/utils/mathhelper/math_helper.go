@@ -49,3 +49,11 @@ func SwapWithThirdVariable(a, b int) (int, int) {
 	a = a - b
 	return a, b
 }
+
+func Sum(nums ...int) int {
+	res := 0
+	for _, num := range nums {
+		res += num
+	}
+	return res
+}

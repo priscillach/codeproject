@@ -61,3 +61,7 @@ func TestMaxScorePath(t *testing.T) {
 	fmt.Println("最大分数:", maxScore)
 	fmt.Println("路径:", path)
 }
+
+func TestCanCompleteCircuit(t *testing.T) {
+	canCompleteCircuit([]int{5, 1, 2, 3, 4}, []int{4, 4, 1, 5, 1})
+}

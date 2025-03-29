@@ -24,3 +24,7 @@ func TestFindDuplicate(t *testing.T) {
 func TestTriangleNumber(t *testing.T) {
 	fmt.Println(triangleNumber([]int{48, 66, 61, 46, 94, 75}))
 }
+
+func TestLongestOnes(t *testing.T) {
+	longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3)
+}

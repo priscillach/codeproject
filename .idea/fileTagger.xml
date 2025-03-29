@@ -1,0 +1,1867 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FileTaggerSettings">
+    <option name="availableTags">
+      <map>
+        <entry key="*">
+          <value>
+            <TagInfo>
+              <option name="name" value="*" />
+              <option name="timestamp" value="1738049929682" />
+              <option name="colorHue" value="0.35315713" />
+              <option name="colorSaturation" value="0.98695654" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737696526424" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="**">
+          <value>
+            <TagInfo>
+              <option name="name" value="**" />
+              <option name="timestamp" value="1738057000921" />
+              <option name="colorHue" value="0.19703102" />
+              <option name="colorSaturation" value="0.96862745" />
+              <option name="colorBrightness" value="1.0" />
+              <option name="order" value="1737707247735" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="***">
+          <value>
+            <TagInfo>
+              <option name="name" value="***" />
+              <option name="timestamp" value="1738203613676" />
+              <option name="colorHue" value="0.13333334" />
+              <option name="colorSaturation" value="1.0" />
+              <option name="colorBrightness" value="1.0" />
+              <option name="order" value="1737707249351" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="****">
+          <value>
+            <TagInfo>
+              <option name="name" value="****" />
+              <option name="timestamp" value="1739605906800" />
+              <option name="colorHue" value="0.0731884" />
+              <option name="colorSaturation" value="1.0" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737707251052" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="*****">
+          <value>
+            <TagInfo>
+              <option name="name" value="*****" />
+              <option name="timestamp" value="1739003294355" />
+              <option name="colorHue" value="0.0050724647" />
+              <option name="colorSaturation" value="1.0" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="colorAlpha" value="0.90588236" />
+              <option name="order" value="1737707253981" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="1">
+          <value>
+            <TagInfo>
+              <option name="name" value="1" />
+              <option name="timestamp" value="1737951259087" />
+              <option name="colorHue" value="0.394636" />
+              <option name="colorSaturation" value="0.68235296" />
+              <option name="colorBrightness" value="1.0" />
+              <option name="order" value="1737776440740" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <TagInfo>
+              <option name="name" value="2" />
+              <option name="timestamp" value="1737951250591" />
+              <option name="colorHue" value="0.394636" />
+              <option name="colorSaturation" value="0.68235296" />
+              <option name="colorBrightness" value="1.0" />
+              <option name="order" value="1737358403436" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="21312">
+          <value>
+            <TagInfo>
+              <option name="name" value="21312" />
+              <option name="timestamp" value="1742181069544" />
+              <option name="colorHue" value="0.30136567" />
+              <option name="order" value="1742181069544" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <TagInfo>
+              <option name="name" value="3" />
+              <option name="timestamp" value="1737955154544" />
+              <option name="colorHue" value="0.394636" />
+              <option name="colorSaturation" value="0.68235296" />
+              <option name="colorBrightness" value="1.0" />
+              <option name="order" value="1737629750452" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <TagInfo>
+              <option name="name" value="4" />
+              <option name="timestamp" value="1738379510932" />
+              <option name="colorHue" value="0.39414415" />
+              <option name="colorSaturation" value="0.6757991" />
+              <option name="colorBrightness" value="0.85882354" />
+              <option name="order" value="1738379500925" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="backage problem">
+          <value>
+            <TagInfo>
+              <option name="name" value="backage problem" />
+              <option name="timestamp" value="1739619222047" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737721701523" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="bfs">
+          <value>
+            <TagInfo>
+              <option name="name" value="bfs" />
+              <option name="timestamp" value="1737951367446" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737773252096" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="binaray search">
+          <value>
+            <TagInfo>
+              <option name="name" value="binaray search" />
+              <option name="timestamp" value="1737951379570" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737721375952" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="closure">
+          <value>
+            <TagInfo>
+              <option name="name" value="closure" />
+              <option name="timestamp" value="1738390663167" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1738390658915" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="de linked list">
+          <value>
+            <TagInfo>
+              <option name="name" value="de linked list" />
+              <option name="timestamp" value="1738059586237" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1738059582445" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="dfs">
+          <value>
+            <TagInfo>
+              <option name="name" value="dfs" />
+              <option name="timestamp" value="1737951364735" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737874178484" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="dp">
+          <value>
+            <TagInfo>
+              <option name="name" value="dp" />
+              <option name="timestamp" value="1737970125954" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737345672879" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="fast sort">
+          <value>
+            <TagInfo>
+              <option name="name" value="fast sort" />
+              <option name="timestamp" value="1737951389345" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737345573272" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="heap">
+          <value>
+            <TagInfo>
+              <option name="name" value="heap" />
+              <option name="timestamp" value="1737951392216" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737345518719" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="left right pass">
+          <value>
+            <TagInfo>
+              <option name="name" value="left right pass" />
+              <option name="timestamp" value="1738916524311" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1738916520994" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="linked list">
+          <value>
+            <TagInfo>
+              <option name="name" value="linked list" />
+              <option name="timestamp" value="1737951359261" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737907497942" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="map">
+          <value>
+            <TagInfo>
+              <option name="name" value="map" />
+              <option name="timestamp" value="1737951372603" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737737619721" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="memory">
+          <value>
+            <TagInfo>
+              <option name="name" value="memory" />
+              <option name="timestamp" value="1738087175744" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1738087170359" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="merge sort">
+          <value>
+            <TagInfo>
+              <option name="name" value="merge sort" />
+              <option name="timestamp" value="1737994677049" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1737978790654" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="nrev">
+          <value>
+            <TagInfo>
+              <option name="name" value="nrev" />
+              <option name="timestamp" value="1740380902454" />
+              <option name="colorHue" value="0.85" />
+              <option name="colorSaturation" value="1.0" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737364398850" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="prefix sum">
+          <value>
+            <TagInfo>
+              <option name="name" value="prefix sum" />
+              <option name="timestamp" value="1742209230257" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1742209225900" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="recursive">
+          <value>
+            <TagInfo>
+              <option name="name" value="recursive" />
+              <option name="timestamp" value="1737951361634" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737907525867" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="sort">
+          <value>
+            <TagInfo>
+              <option name="name" value="sort" />
+              <option name="timestamp" value="1737951369711" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737739610241" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="stack">
+          <value>
+            <TagInfo>
+              <option name="name" value="stack" />
+              <option name="timestamp" value="1737956355478" />
+              <option name="colorHue" value="0.54642314" />
+              <option name="colorSaturation" value="0.9521739" />
+              <option name="colorBrightness" value="0.9019608" />
+              <option name="order" value="1737713066544" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="topology">
+          <value>
+            <TagInfo>
+              <option name="name" value="topology" />
+              <option name="timestamp" value="1739619252341" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1739004624775" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="tricky">
+          <value>
+            <TagInfo>
+              <option name="name" value="tricky" />
+              <option name="timestamp" value="1739807487916" />
+              <option name="colorHue" value="0.5452489" />
+              <option name="colorSaturation" value="0.9650655" />
+              <option name="colorBrightness" value="0.8980392" />
+              <option name="order" value="1739602396058" />
+            </TagInfo>
+          </value>
+        </entry>
+        <entry key="usol">
+          <value>
+            <TagInfo>
+              <option name="name" value="usol" />
+              <option name="timestamp" value="1739607208437" />
+              <option name="colorSaturation" value="0.0" />
+              <option name="colorBrightness" value="0.0" />
+              <option name="order" value="1737970254139" />
+            </TagInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="fileTagsMap">
+      <map>
+        <entry key="$PROJECT_DIR$/src/leetcode/bfs/102. Binary Tree Level Order Traversal.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bfs/297. Serialize and Deserialize Binary Tree.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bfs/407. Trapping Rain Water II.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+              <option value="heap" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bfs/662. Maximum Width of Binary Tree.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bfs/958. Check Completeness of a Binary Tree.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/153. Find Minimum in Rotated Sorted Array.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/162. Find Peak Element.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/215. Kth Largest Element in an Array.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="fast sort" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/300. Longest Increasing Subsequence.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="dp" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/33. Search in Rotated Sorted Array.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/34. Find First and Last Position of Element in Sorted Array.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/69. Sqrt(x).go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/704. Binary Search.go">
+          <value>
+            <set>
+              <option value="*****" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/74. Search a 2D Matrix.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bit/136. Single Number.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bit/2683. Neighboring Bitwise XOR.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bit/78. Subsets.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/bit/NM. Mod.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/101. Symmetric Tree.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/105. Construct Binary Tree from Preorder and Inorder Traversal.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/106. Construct Binary Tree from Inorder and Postorder Traversal.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/112. Path Sum.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/113. Path Sum II.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/114. Flatten Binary Tree to Linked List.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/124. Binary Tree Maximum Path Sum.go">
+          <value>
+            <set>
+              <option value="***" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/129. Sum Root to Leaf Numbers.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/226. Invert Binary Tree.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/230. Kth Smallest Element in a BST.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/236. Lowest Common Ancestor of a Binary Tree.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/450. Delete Node in a BST.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/543. Diameter of Binary Tree.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/572. Subtree of Another Tree.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/889. Construct Binary Tree from Preorder and Postorder Traversal.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/96. Unique Binary Search Trees.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+              <option value="dp" />
+              <option value="memory" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/LCR 143. SubStructure.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/LCR 144. Flip Tree.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/LCR 155. BST to Sorted Doubly Linked List.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/binary_tree/LCR 174. Find Target from BST.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="closure" />
+              <option value="stack" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/grid/329. Longest Increasing Path in a Matrix.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="1" />
+              <option value="bfs" />
+              <option value="memory" />
+              <option value="topology" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/grid/54. Spiral Matrix.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/grid/79. Word Search.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/list/139. Word Break.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+              <option value="memory" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/list/39. Combination Sum.go">
+          <value>
+            <set>
+              <option value="***" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/list/40. Combination Sum II.go">
+          <value>
+            <set>
+              <option value="*****" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/list/46. Permutations.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dfs/list/47. Permutations II.go">
+          <value>
+            <set>
+              <option value="****" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/10. Regular Expression Matching.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/1143. Longest Common Subsequence.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/120. Triangle.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/122. Best Time to Buy and Sell Stock II.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/123. Best Time to Buy and Sell Stock III.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/152. Maximum Product Subarray.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/188. Best Time to Buy and Sell Stock IV.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/198. House Robber.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/213. House Robber II.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/221. Maximal Square.go">
+          <value>
+            <set>
+              <option value="****" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/300. Longest Increasing Subsequence.go">
+          <value>
+            <set>
+              <option value="binaray search" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/32. Longest Valid Parentheses.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="stack" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/322. Coin Change.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+              <option value="backage problem" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/337. House Robber III.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/5. Longest Palindromic Substring.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/518. Coin Change II.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/62. Unique Paths.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/64. Minimum Path Sum.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/718. Maximum Length of Repeated Subarray.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/72. Edit Distance.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/91. Decode Ways.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/dp/NM. Circle Return to Origin Problem.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/graph/topological_graph/207. Course Schedule.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/graph/topological_graph/210. Course Schedule II.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/122. Best Time to Buy and Sell Stock II.go">
+          <value>
+            <set>
+              <option value="dp" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/135. Candy.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="left right pass" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/169. Majority Element.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/2661. First Completely Painted Row or Column.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/31. Next Permutation.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+              <option value="sort" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/45. Jump Game II.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="1" />
+              <option value="dp" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/53. Maximum Subarray.go">
+          <value>
+            <set>
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/55. Jump Game.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/56. Merge Intervals.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/678. Valid Parenthesis String.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/7. Reverse Integer.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/9. Palindrome Number.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/LCR. 187 Josephus Problem.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+              <option value="tricky" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/NM. Find Prime Factors.go">
+          <value>
+            <set>
+              <option value="***" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/NM. Find the Time Range.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/NM. Jump Game With Score.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/prefix_sum/560. Subarray Sum Equals K.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="map" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/three_pointer/15. 3Sum.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/three_pointer/16. 3Sum Closest.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/three_pointer/75. Sort Colors.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/11. Container With Most Water.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/125. Valid Palindrome.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/209. Minimum Size Subarray Sum.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/26. Remove Duplicates from Sorted Array.go">
+          <value>
+            <set>
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/283. Move Zeroes.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/287. Find the Duplicate Number.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="1" />
+              <option value="nrev" />
+              <option value="tricky" />
+              <option value="usol" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/611. Valid Triangle Number.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="binaray search" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/713. Subarray Product Less Than K.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/76. Minimum Window Substring.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/greedy/two_pointer/948. Bag of Tokens.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/heap/407. Trapping Rain Water II.go">
+          <value>
+            <set>
+              <option value="bfs" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/heap/630. Course Schedule III.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/in-place_replace/41. First Missing Positive.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/in-place_replace/442. Find All Duplicates in an Array.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+              <option value="tricky" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/141. Linked List Cycle.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/142. Linked List Cycle II.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/143. Reorder List.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/148. Sort List.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/160. Intersection of Two Linked Lists.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/19. Remove Nth Node From End of List.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/2. Add Two Numbers.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/206. Reverse Linked List.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/21. Merge Two Sorted Lists.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/23. Merge k Sorted Lists.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/234. Palindrome Linked List.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/24. Swap Nodes in Pairs.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/25. Reverse Nodes in k-Group.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+              <option value="recursive" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/328. Odd Even Linked List.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/445. Add Two Numbers II.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="1" />
+              <option value="stack" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/61. Rotate List.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/82. Remove Duplicates from Sorted List II.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/83. Remove Duplicates from Sorted List.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/92. Reverse Linked List II.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/LCR 140. Training Plan II.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/NM. Middle Element.go">
+          <value>
+            <set>
+              <option value="****" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/linked_list/Supplementary Q1 Sort Linked List with Odd Indices Ascending and Even Indices Descending.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/map/1. Two Sum.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/map/128. Longest Consecutive Sequence.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/map/3. Longest Substring Without Repeating Characters.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/map/560. Subarray Sum Equals K.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/matrix/240. Search a 2D Matrix II.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/matrix/48. Rotate Image.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/matrix/498. Diagonal Traverse.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/queue/monotonic_queue/239. Sliding Window Maximum.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/22. Generate Parentheses.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/25. Reverse Nodes in k-Group.go">
+          <value>
+            <set>
+              <option value="linked list" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/50. Pow(x, n).go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+              <option value="memory" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/509. Fibonacci Number.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="1" />
+              <option value="memory" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/70. Climbing Stairs.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+              <option value="memory" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/divide_and_conquer/148. Sort List.go">
+          <value>
+            <set>
+              <option value="linked list" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/divide_and_conquer/4. Median of Two Sorted Arrays.go">
+          <value>
+            <set>
+              <option value="usol" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/recursive/divide_and_conquer/889. Construct Binary Tree from Preorder and Postorder Traversal.go">
+          <value>
+            <set>
+              <option value="dfs" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/179. Largest Number.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/539. Minimum Time Difference.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/LCR 159. Stock Management III.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="1" />
+              <option value="heap" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/LCR 170. Trading Reverse Pairs.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+              <option value="merge sort" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/algo/Fast Sort.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/algo/Heap Sort.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="3" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/algo/Merge Sort.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/sort/algo/Radix Sort.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/20. Valid Parentheses.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/224. Basic Calculator.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/227. Basic Calculator II.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/32. Longest Valid Parentheses.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/394. Decode String.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/772. Basic Calculator III.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/binary_tree/144. Binary Tree Preorder Traversal.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/binary_tree/145. Binary Tree Postorder Traversal.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="4" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/binary_tree/94. Binary Tree Inorder Traversal.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="3" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/monotonic_stack/121. Best Time to Buy and Sell Stock.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/monotonic_stack/402. Remove K Digits.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/monotonic_stack/42. Trapping Rain Water.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/monotonic_stack/739. Daily Temperatures.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/stack/monotonic_stack/85. Maximal Rectangle.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="prefix sum" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/151. Reverse Words in a String.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/165. Compare Version Numbers.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/415. Add Strings.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/43. Multiply Strings.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/468. Validate IP Address.go">
+          <value>
+            <set>
+              <option value="*" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/796. Rotate String.go">
+          <value>
+            <set>
+              <option value="***" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/8. String to Integer (atoi).go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/93. Restore IP Addresses.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+              <option value="dfs" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/string_resolve/NM. Swap String.go">
+          <value>
+            <set>
+              <option value="**" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/array_shuffle/384. Shuffle an Array.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/lfu_cache/460. LFU Cache.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/lru_cache/146. LRU Cache.go">
+          <value>
+            <set>
+              <option value="*****" />
+              <option value="2" />
+              <option value="de linked list" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/min_stack/155. Min Stack.go">
+          <value>
+            <set>
+              <option value="**" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/prefix_tree/208. Implement Trie (Prefix Tree).go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="1" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/queue_stack/225. Implement Stack using Queues.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="1" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/struct_design/stack_queue/232. Implement Queue using Stacks.go">
+          <value>
+            <set>
+              <option value="*" />
+              <option value="2" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/tree/binary_indexed_tree/300. Longest Increasing Subsequence.go">
+          <value>
+            <set>
+              <option value="***" />
+              <option value="usol" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/tree/prefix_tree/440. K-th Smallest in Lexicographical Order.go">
+          <value>
+            <set>
+              <option value="****" />
+              <option value="nrev" />
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/unclassified/470. Implement Rand10() Using Rand7().go">
+          <value>
+            <set>
+              <option value="***" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="FileTaggerStorage">
+    <option name="fileTagsMap">
+      <map>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/162. Find Peak Element.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/binary_search/704. Binary Search.go">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -27,4 +27,5 @@ func TestTriangleNumber(t *testing.T) {
 
 func TestLongestOnes(t *testing.T) {
 	longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3)
+	longestOnes([]int{1, 1, 0, 0, 1, 1, 1}, 1)
 }

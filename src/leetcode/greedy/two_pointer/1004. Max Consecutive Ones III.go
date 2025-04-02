@@ -13,7 +13,7 @@ func longestOnes(nums []int, k int) int {
 		if k == 0 {
 			maxOnes = mathhelper.Max(maxOnes, right-left)
 		}
-		if k < 0 {
+		for k < 0 {
 			if nums[left] == 0 {
 				k++
 			}
